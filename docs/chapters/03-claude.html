@@ -1,0 +1,498 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Claude 업무 활용 · 한전 AI 업무활용 실습교재</title><meta name="description" content="Windows의 ChatGPT·Claude 앱과 Gemini 웹으로 진행하는 6시간 AI 업무활용 실습교재. 실습 자료와 요청문, 실제 화면 캡처를 제공합니다."><link rel="stylesheet" href="../assets/site.css"><script src="../assets/site.js" defer></script></head><body class="chapter" data-root="../"><a class="skip" href="#main">본문으로 이동</a><aside class="sidebar" aria-label="교재 탐색"><div class="eyebrow">AI WORKBOOK</div><a class="brand" href="../index.html">한전 AI 업무활용<br>실습교재</a><div class="course">Windows · ChatGPT · Claude · Gemini<br>6시간 실습 과정</div><div class="search-wrap"><label class="sr-only" for="search">교재 검색</label><input id="search" type="search" placeholder="교재에서 검색" autocomplete="off"><div class="search-results" aria-live="polite"></div></div><nav class="nav" aria-label="장별 목차"><a href="../index.html"><span class="num">↗</span>시작하기</a><a href="../chapters/00-basics.html"><span class="num">00</span>기본 개념</a><a href="../chapters/01-setup.html"><span class="num">01</span>계정과 Windows 앱</a><a href="../chapters/02-chatgpt.html"><span class="num">02</span>ChatGPT 업무 활용</a><a href="../chapters/03-claude.html" aria-current="page"><span class="num">03</span>Claude 업무 활용</a><a href="../chapters/04-gemini.html"><span class="num">04</span>Gemini 업무 활용</a><a href="../chapters/05-apply.html"><span class="num">05</span>내 업무 적용·정리</a></nav><div class="sidebar-footer"><a href="https://axia-llm.dreamitbiz.com" target="_blank" rel="noopener">LLM 실습 플랫폼 ↗</a><a href="https://jangka44.notion.site/AI-3f6d4cdd4f478194a8dbda7adef5ccbd" target="_blank" rel="noopener">노션 교재 ↗</a></div></aside><div class="workspace"><header class="topbar"><button class="menu-button" type="button" aria-expanded="false">목차</button><span>Claude 업무 활용</span><button class="print-button" type="button">인쇄</button></header><main id="main"><article><h1 id="3-claude">3. Claude 업무 활용</h1><details class="toc"><summary>이 장의 목차</summary><div class="toc">
+<ul>
+<li><a href="#cl01">CL01. 여러 문서의 조건 대조하기</a></li>
+<li><a href="#cl02-projects">CL02. Projects에 지침을 저장하고 근거 찾기</a></li>
+<li><a href="#cl02p">CL02P. 공개 입찰·규정 문서에서 근거 찾기</a></li>
+<li><a href="#cl03-artifact">CL03. 진행현황 대시보드·Artifact 만들기</a></li>
+</ul>
+</div>
+</details>
+<p><strong>90분.</strong> 문서 대조 → Projects에 자료·지침 저장 → 공개 문서의 근거 확인 → 대시보드 만들기 순서로 진행합니다. Windows 앱의 <strong>Claude 대화 화면</strong>을 사용합니다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>시간</th>
+<th>실습</th>
+<th>만들 결과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0~25분</td>
+<td>CL01 문서 통합 검토</td>
+<td>문서 대조표·확인 질문</td>
+</tr>
+<tr>
+<td>25~60분</td>
+<td>CL02 Projects·공개 문서</td>
+<td>근거가 붙은 답변</td>
+</tr>
+<tr>
+<td>60~90분</td>
+<td>CL03 대시보드·Artifact</td>
+<td>필터로 볼 수 있는 진행현황</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>파일 선택:</strong> 같은 문서의 Word·PDF·HWPX 중 <strong>한 형식만</strong> 사용합니다. AI 첨부에는 아래 PDF를 권장합니다. 공개 원문은 PDF 그대로 사용합니다.</p>
+<h2 id="cl01">CL01. 여러 문서의 조건 대조하기</h2>
+<p><strong>목표:</strong> 문서별 조건을 비교하고 충돌·미확정 제안·담당자 질문을 구분합니다.</p>
+<h3 id="_1">지금 준비할 파일</h3>
+<p><strong>첨부 4개:</strong> 서로 다른 PDF를 한 번씩 넣습니다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>파일</th>
+<th>쓰는 이유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../materials/03_claude/입찰공고문_가상.pdf">입찰공고 PDF</a></td>
+<td>사업 조건·제출기한 확인</td>
+</tr>
+<tr>
+<td><a href="../materials/03_claude/제안요청서_가상.pdf">제안요청서 PDF</a></td>
+<td>상세 산출물·평가 기준 확인</td>
+</tr>
+<tr>
+<td><a href="../materials/03_claude/회의록_가상.pdf">회의록 PDF</a></td>
+<td>변경 제안과 승인 여부 확인</td>
+</tr>
+<tr>
+<td><a href="../materials/03_claude/문서검토_업무지침_가상.pdf">문서 검토 지침 PDF</a></td>
+<td>대조표의 작성 기준 확인</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_2">바로 할 일</h3>
+<ol>
+<li>Claude에서 새 대화를 엽니다. Code 화면이면 Claude 대화 화면으로 이동합니다.</li>
+<li>위 PDF <strong>4개</strong>를 첨부하고 파일명이 중복되지 않았는지 봅니다.</li>
+<li>다음 요청을 보냅니다. 답변 첫 부분의 서로 다른 문서가 4종인지 확인합니다.</li>
+</ol>
+<p>요청문 원본: <a href="../prompts/CL01_문서통합검토.txt">CL01</a></p>
+<pre><code class="language-text">입찰공고문·제안요청서·회의록·문서검토 업무지침을 함께 검토해 주세요.
+1. 먼저 파일명·문서번호·각 문서의 역할을 목록으로 확인하세요.
+2. 사업명·사업금액·기간·제출기한·산출물·평가배점을 문서별로 독립 추출하세요.
+3. 대조표를
+'항목 / 공고 값·근거 / 제안요청서 값·근거 / 회의록 내용·상태 /
+일치·불일치·미제공·미확정 제안 / 담당자 확인 질문'으로 작성하세요.
+4. 근거는 파일명·문서번호·항목 번호 또는 페이지로 표시하세요.
+회의 제안을 확정 조건에 합치거나 충돌 날짜 중 하나를 자동 선택하지 마세요.
+자료에 없는 문서 우선순위·낙찰 기준·한전 내부 규정을 정하지 마세요.
+우선 확인할 사항 3개 이내로 마무리하세요.
+</code></pre>
+<figure><img alt="PDF를 첨부하고 대조 요청을 보냅니다." src="../captures/annotated/03_claude/CL01_03_four_pdfs_once.jpg" /><figcaption>PDF를 첨부하고 대조 요청을 보냅니다.</figcaption></figure>
+<h3 id="_3">원문을 열어 확인하고 고치세요</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>확인할 것</th>
+<th>확인 기준</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>제출기한</td>
+<td>문서별 날짜·항목을 따로 표시했는지</td>
+</tr>
+<tr>
+<td>회의 제안</td>
+<td>현재 기재 조건·제안·승인 증거를 구분했는지</td>
+</tr>
+<tr>
+<td>산출물</td>
+<td>FAQ·평가 사례·교육 횟수를 구분했는지</td>
+</tr>
+<tr>
+<td>배점</td>
+<td>기술 세부 합계와 기술·가격 합계를 계산했는지</td>
+</tr>
+<tr>
+<td>근거·미제공</td>
+<td>실제 항목을 가리키는지, 없는 연락처·규정을 만들지 않았는지</td>
+</tr>
+</tbody>
+</table></div>
+<p>공고·제안요청서·회의록의 해당 항목을 직접 열어 읽습니다. 날짜를 하나로 정하거나 회의 제안을 확정 조건으로 넣었으면 같은 대화에 아래 요청을 보냅니다.</p>
+<p>요청문 원본: <a href="../prompts/CL01R_문서근거수정.txt">CL01R</a></p>
+<pre><code class="language-text">방금 대조표의 제출기한과 산출물 개수, 회의 제안을 원문과 다시 대조해 주세요.
+충돌하는 값은 양쪽 문서의 값과 근거를 따로 유지하고, 변경 승인 문서가 없으면 제안을 미확정으로 표시하세요.
+불일치 값을 임의로 통일한 부분이 있다면 되돌리고, 수정 전후·수정 이유·담당자가 확인할 문서를 제시하세요.
+</code></pre>
+<figure><img alt="제출기한 충돌과 변경 제안을 확인합니다. ‘확정 조건’이라는 표현도 승인 증거가 있는지 다시 봅니다." src="../captures/annotated/03_claude/CL01_02_findings.png" /><figcaption>제출기한 충돌과 변경 제안을 확인합니다. ‘확정 조건’이라는 표현도 승인 증거가 있는지 다시 봅니다.</figcaption></figure>
+<p>문서 목록·대조표·확인 질문·수정 이유를 저장합니다. 읽히지 않는 PDF는 다시 첨부하거나 같은 내용의 Markdown을 사용합니다. 일부만 읽었다면 빠진 파일을 지정합니다. 표가 길면 기한·금액·기간부터 확인합니다.</p>
+<h3 id="_4">성공 확인</h3>
+<p>AI 대조표가 기한 충돌과 미승인 제안을 구분하고, 근거와 확인 질문을 제시했는지 확인합니다.</p>
+<details>
+<summary>선택 참고: 대조표의 확인 답</summary>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>원문에서 확인할 답</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>제출기한</td>
+<td>공고 §2: 2026-10-27 17시 / 제안요청서 §5: 2026-10-28 17시. 회의록 §4에도 최종 날짜 없음</td>
+</tr>
+<tr>
+<td>평가 사례</td>
+<td>현재 기재값 200건 / 회의록 §3의 300건은 승인 증거 없는 제안</td>
+</tr>
+<tr>
+<td>산출물</td>
+<td>제안요청서 §3의 보완 문서·교육 결과 요약은 공고 §3에 별도 기재 없음. 납품 범위 확인 필요</td>
+</tr>
+<tr>
+<td>평가배점</td>
+<td>기술 80점, 기술·가격 합계 100점</td>
+</tr>
+</tbody>
+</table></div>
+<p>파일명을 확인할 수 없다면 추정하지 말고 문서번호·항목 번호를 근거로 확인합니다. “확정 조건”보다 “첨부 문서의 현재 기재 조건”이 정확합니다. 제공되지 않은 금액·기간 변경안을 만들지 않습니다.</p>
+<p><strong>문서 검토 답안 예시:</strong> <a href="../outputs/03_claude/CL01_문서검토_배포답안.docx">Word</a> · <a href="../outputs/03_claude/CL01_문서검토_배포답안.pdf">PDF</a> · <a href="../outputs/03_claude/CL01_문서검토_배포답안.hwpx">HWPX</a>. 한 형식을 선택해 자신의 표와 비교합니다.</p>
+</details>
+<h2 id="cl02-projects">CL02. Projects에 지침을 저장하고 근거 찾기</h2>
+<p><strong>목표:</strong> 자료와 검토 지침을 프로젝트에 저장하고 근거가 붙은 답변을 받습니다.</p>
+<h3 id="_5">지금 준비할 파일</h3>
+<p><strong>프로젝트 자료 4개:</strong> CL01에서 쓴 네 PDF를 다시 준비합니다. 일반 대화 첨부와 프로젝트 자료 등록은 별개입니다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>파일</th>
+<th>쓰는 이유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../materials/03_claude/입찰공고문_가상.pdf">입찰공고 PDF</a></td>
+<td>공고의 조건·제출기한 근거</td>
+</tr>
+<tr>
+<td><a href="../materials/03_claude/제안요청서_가상.pdf">제안요청서 PDF</a></td>
+<td>산출물·평가 기준 근거</td>
+</tr>
+<tr>
+<td><a href="../materials/03_claude/회의록_가상.pdf">회의록 PDF</a></td>
+<td>변경 제안·미확정 상태 근거</td>
+</tr>
+<tr>
+<td><a href="../materials/03_claude/문서검토_업무지침_가상.pdf">문서 검토 지침 PDF</a></td>
+<td>검토 기준 유지</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_6">바로 할 일</h3>
+<ol>
+<li><strong>Projects</strong>를 엽니다.</li>
+<li><strong>새 프로젝트</strong>를 선택합니다.</li>
+<li>이름을 <code>업무개선_문서검토</code>로 입력합니다.</li>
+<li><strong>프로젝트 생성</strong>을 선택합니다.</li>
+<li>자료 추가 **+**에서 PDF <strong>4개</strong>를 등록합니다.</li>
+<li>처리 완료를 확인합니다.</li>
+<li><strong>Set project instructions</strong>를 엽니다.</li>
+<li>다음 지침을 붙여넣습니다.</li>
+<li><strong>지침 저장</strong>을 선택합니다.</li>
+</ol>
+<figure><img alt="프로젝트 이름을 입력하고 생성합니다." src="../captures/annotated/03_claude/CL02_01_create_project.png" /><figcaption>프로젝트 이름을 입력하고 생성합니다.</figcaption></figure>
+<p>요청문 원본: <a href="../prompts/CL02I_Projects지침.txt">CL02I</a></p>
+<pre><code class="language-text">파일명·문서번호·기재 항목을 근거로 답한다.
+공고·제안요청서의 조건, 회의 제안, 승인된 변경을 구분한다.
+충돌 값은 양쪽을 별도로 표시하고 최종값을 임의 선택하지 않는다.
+근거가 없으면 미제공·확인 필요로 표시한다.
+2025년 운영 실적과 2026년 용역 조건, 축약 FAQ와 정식 산출물, 계약 건수와 평가 사례 수를 구분한다.
+외부 공개자료는 기관·시행일·적용 범위를 확인하며 이 사업이나 한전에 자동 적용하지 않는다.
+출력은 근거 대조표와 담당자 확인 질문이다.
+</code></pre>
+<figure><img alt="지침을 입력한 뒤 저장합니다." src="../captures/annotated/03_claude/CL02_02_instructions.png" /><figcaption>지침을 입력한 뒤 저장합니다.</figcaption></figure>
+<figure><img alt="프로젝트 자료에 서로 다른 PDF 4개가 등록됐는지 확인합니다." src="../captures/annotated/03_claude/CL02_03_context_uploaded.png" /><figcaption>프로젝트 자료에 서로 다른 PDF 4개가 등록됐는지 확인합니다.</figcaption></figure>
+<h3 id="_7">프로젝트 안에서 질문하세요</h3>
+<p>프로젝트 안의 새 대화를 열고 다음 요청을 보냅니다. 답변의 문서명·번호·항목을 원문과 대조합니다.</p>
+<p>요청문 원본: <a href="../prompts/CL02_Projects근거질문.txt">CL02</a></p>
+<pre><code class="language-text">프로젝트에 저장한 문서만으로 답해 주세요.
+제출해야 할 파일은 무엇이고, 제출기한은 문서 사이에 일치하나요?
+회의록에서 제안한 산출물 변경은 승인됐나요?
+현재 문서의 기재 기준·변경 제안·승인 증거를 구분하세요.
+각 답변에 파일명·문서번호·항목 번호를 붙이고, 없으면 미제공이라고 표시하세요.
+</code></pre>
+<figure><img alt="답변이 200건 기재값과 300건 제안을 구분하는지 확인합니다." src="../captures/annotated/03_claude/CL02_04_evidence_answer.png" /><figcaption>답변이 200건 기재값과 300건 제안을 구분하는지 확인합니다.</figcaption></figure>
+<p>날짜를 통일하거나 제안을 승인된 값으로 쓰면 CL01R 요청을 다시 사용합니다. 회의일을 실제 일정의 오류로 단정하거나 구체적인 금액·기간 변경안이 있다고 쓰지 않도록 확인합니다.</p>
+<figure><img alt="수정 답변에서 문서 기재값과 승인 여부, 세 개 이내 확인 질문을 확인합니다." src="../captures/annotated/03_claude/CL02_06_project_revision.png" /><figcaption>수정 답변에서 문서 기재값과 승인 여부, 세 개 이내 확인 질문을 확인합니다.</figcaption></figure>
+<p>Projects가 없으면 한 대화에 자료 4개와 위 지침을 함께 넣어 진행합니다. 프로젝트에 저장하는 기능과 한 대화에서 자료를 읽는 기능은 구분합니다. <a href="https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects">Projects 사용 안내</a></p>
+<h3 id="_8">성공 확인</h3>
+<p>프로젝트 자료 4개·저장 지침을 확인하고, 새 프로젝트 대화의 답변이 원문 근거를 제시하면 완료입니다.</p>
+<details>
+<summary>선택 참고: Projects 답변 예시</summary>
+<p>200건은 <strong>현재 문서의 기재값</strong>, 300건은 <strong>미승인 제안</strong>, 변경 승인 문서는 <strong>미제공</strong>으로 구분합니다. 제출기한 두 값은 유지하고 확인 질문을 세 개 이내로 정리합니다.</p>
+<p><a href="../outputs/03_claude/CL02_프로젝트_배포답안.docx">Word</a> · <a href="../outputs/03_claude/CL02_프로젝트_배포답안.pdf">PDF</a> · <a href="../outputs/03_claude/CL02_프로젝트_배포답안.hwpx">HWPX</a> 중 한 형식의 예시를 골라 비교할 수 있습니다.</p>
+</details>
+<h2 id="cl02p">CL02P. 공개 입찰·규정 문서에서 근거 찾기</h2>
+<p><strong>목표:</strong> 공개 문서에서 조건·예외·근거를 찾아 적용 범위를 구분합니다.</p>
+<p>CL02의 35분 안에서 이어서 진행합니다.</p>
+<h3 id="_9">지금 준비할 파일</h3>
+<p><strong>추가 등록 2개:</strong> 공개 PDF를 CL02 프로젝트에 추가합니다. 기존 자료 4개와 합해 프로젝트 자료는 <strong>6개</strong>입니다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>파일</th>
+<th>쓰는 이유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../materials/00_public/입찰공고문_화학물질안전원.pdf">화학물질안전원 입찰공고 PDF</a></td>
+<td>금액·기간·제출 안내·평가 분모 찾기</td>
+</tr>
+<tr>
+<td><a href="../materials/00_public/계약집행기준_20260602_제367호_연혁.pdf">계약집행기준 연혁 PDF</a></td>
+<td>조항의 조건·예외·시점 읽기</td>
+</tr>
+</tbody>
+</table></div>
+<p>화학물질안전원 공고와 지방자치단체 계약집행기준 연혁본은 <strong>한전 내부 규정이 아닙니다</strong>. 이번에는 근거를 찾는 방법을 연습합니다. 실제 한전 업무에는 해당 사업의 계약문서·적용 규정·개정 시점을 담당자에게 확인해야 합니다.</p>
+<h3 id="_10">바로 할 일</h3>
+<ol>
+<li>프로젝트에 위 PDF 2개를 추가합니다.</li>
+<li>새 프로젝트 대화에서 다음 요청을 보냅니다.</li>
+<li>발행 기관·공고/시행일·현행/연혁 구분을 읽습니다.</li>
+<li>제시된 근거를 PDF에서 직접 찾아 대조합니다. 찾을 수 없는 근거는 확인된 것으로 보지 않습니다.</li>
+</ol>
+<p>요청문 원본: <a href="../prompts/CL02P_공개입찰적용범위.txt">CL02P</a></p>
+<pre><code class="language-text">추가한 공개 입찰공고와 규정 자료를 검토하되 사업에 자동 적용하지 마세요.
+먼저 각 문서의 발행 기관·제목·시행 또는 공고 시점·현행/연혁 여부·적용 범위를 확인하세요.
+공개 입찰공고에서 금액·기간·제출자료·변경 또는 문의 절차를 근거 위치와 함께 추출하세요.
+이 공개 문서로 사업이나 한전의 조건을 확정할 수 없는 부분을 설명하고, 실제 판단에 필요한 추가 문서를 적으세요.
+조항을 찾을 때 해당 문구와 항목을 제시하되 제공되지 않은 법적 우선순위나 현재 규정 판단을 만들지 마세요.
+</code></pre>
+<figure><img alt="공개 공고의 조건과 사업의 조건을 구분합니다." src="../captures/annotated/03_claude/CL02_05_public_answer.png" /><figcaption>공개 공고의 조건과 사업의 조건을 구분합니다.</figcaption></figure>
+<p>답변에 없는 금액·기간 변경안이 등장하면 “변경 내용은 제공되지 않았으니 기재 조건과 미확정 제안을 구분해 주세요”라고 수정 요청합니다. 공개 규정의 조항을 찾았다는 것만으로 한전 적용이나 사업의 승인 여부를 정하지 않습니다.</p>
+<figure><img alt="후속 답변에서 미제공 변경 내용과 문서 적용 범위를 확인합니다." src="../captures/annotated/03_claude/CL02_07_public_revision.png" /><figcaption>후속 답변에서 미제공 변경 내용과 문서 적용 범위를 확인합니다.</figcaption></figure>
+<h3 id="_11">원문에서 확인할 부분</h3>
+<ol>
+<li>공고 <strong>PDF 2·3쪽</strong>의 가격입찰서·제안서 제출 순서를 읽고 두 표현이 다른지 확인합니다.</li>
+<li>공고 <strong>PDF 4쪽</strong>의 기술 배점한도 80점에 대한 85%를 계산합니다. 총점 85점과 구분합니다.</li>
+<li>규정 <strong>PDF 275쪽의 14일</strong>, <strong>277쪽의 30일</strong>을 시작 시점·해야 할 일·조건·예외와 함께 읽습니다.</li>
+<li>이 공개 문서만으로 첨부 문서의 200→300건 제안이나 제출기한 충돌이 해결되는 것은 아닙니다.</li>
+</ol>
+<p>숫자뿐 아니라 <strong>무엇의 숫자인지·조건·예외·근거</strong>를 함께 확인합니다. AI가 놓친 내용도 원문에서 확인합니다.</p>
+<h3 id="_12">성공 확인</h3>
+<p>발행 기관·시점·적용 범위와 원문 근거의 조건·예외를 확인합니다.</p>
+<details>
+<summary>선택 참고: 원문 해설</summary>
+<p>실제 제출 순서나 개별 계약 적용을 대신 결정하지 않습니다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>확인할 항목</th>
+<th>원문 해설</th>
+<th>근거 위치</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>제출 순서 충돌</td>
+<td>PDF 2쪽은 <strong>가격입찰서와 제안서의 순서에 관계없이 제출 가능</strong>이라고 안내합니다. PDF 3쪽은 <strong>제안서 제출 완료 후 가격입찰서 제출 가능</strong> 및 <strong>제안서 최종제출 완료 후 가격입찰서 진입 가능</strong>이라고 안내합니다. 같은 두 제출물에 대한 표현이 다릅니다. 한쪽을 자동 선택하지 않고, 발주기관의 최신 정정공고·제출 안내와 실제 나라장터 절차를 확인할 사항으로 남깁니다. AI 답변에 빠져 있어도 원문에서 확인할 사항입니다.</td>
+<td>공고 PDF 2쪽 §4-나 하단; PDF 3쪽 첫 문단·제출 유의사항</td>
+</tr>
+<tr>
+<td>85%의 분모</td>
+<td>기술능력평가 80점·가격평가 20점이며, 협상적격 기준은 **기술능력평가 배점한도의 85%**입니다. <code>80 × 0.85 = 68점</code>, 즉 기술점수 <strong>68/80</strong> 기준입니다. 전체 합산 100점 중 85점이라는 뜻이 아니며 가격점수를 더해 이 기술 기준을 대신하지 않습니다. 이 계산은 해당 공고의 문구 해석 연습입니다.</td>
+<td>공고 PDF 4쪽 §6-가</td>
+</tr>
+<tr>
+<td>14일의 조건</td>
+<td>계약의 <strong>기본방침 변동 없이</strong>, 과업내용서의 용역 항목을 변경해 <strong>발주기관에 유리하다고 판단되는 제안</strong>에 관한 항목입니다. 계약담당자는 <strong>제안요청을 받은 날부터 14일 이내 승인 여부를 통지</strong>합니다. 14일 내 무조건 승인하거나 자동 승인된다는 뜻이 아닙니다. 과업변경은 원칙적으로 해당 부분 이행 전에 완료하고 긴급한 필요의 예외는 협의·시기 명확화를 함께 읽습니다.</td>
+<td>규정 제9장 제6절 8-가~다; PDF 274~275쪽 / 인쇄 272~273쪽</td>
+</tr>
+<tr>
+<td>30일의 조건·예외</td>
+<td><strong>계약상대자의 계약금액조정 청구를 받은 날부터 30일 이내 조정</strong>에 관한 항목입니다. 예산배정 지연 등 불가피한 경우 협의로 기한을 연장할 수 있고, 조정할 예산이 없으면 공사량·업무량 등의 조정 규정이 있습니다. 필요한 보완요구 통보부터 보완 완료 통지까지는 기간에 산입하지 않습니다. 해당 청구는 <strong>준공대가(완료대가) 수령 전</strong>에 해야 조정금액을 지급받을 수 있다는 조건도 함께 확인합니다. 용역은 지시·승인된 과업변경에 따른 금액조정 항목과 연결해 읽습니다.</td>
+<td>규정 제9장 제7절 1-나-1)·다-1)~3); PDF 277쪽 / 인쇄 275쪽</td>
+</tr>
+<tr>
+<td>첨부 문서와의 관계</td>
+<td>첨부 공고·RFP의 200건은 현재 문서 기재값이고 회의록의 300건은 승인 증거 없는 제안입니다. 공고 10월 27일·RFP 10월 28일의 기한도 그대로 다릅니다. 공개 자료를 읽었다는 이유로 제안을 승인하거나 날짜를 통일하지 않습니다. 적용 문서·담당자 확인 및 변경 승인/정정 문서가 필요합니다.</td>
+<td>SIM-BID §2·3; SIM-RFP §3·4·5; SIM-MEET §3·4</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>공고 기본 항목</th>
+<th>원문 값·위치</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>공고</td>
+<td>화학물질안전원 제2026-28호, 2026-04-01, PDF 1·6쪽</td>
+</tr>
+<tr>
+<td>예산·기간</td>
+<td>50,000,000원(VAT 포함), 계약일부터 240일, PDF 1쪽</td>
+</tr>
+<tr>
+<td>가격입찰 접수</td>
+<td>2026-04-09 10:00~2026-04-14 11:00, PDF 1쪽</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>원문 해설 파일:</strong> <a href="../outputs/03_claude/CL02P_제작자확인문제.docx">Word</a> · <a href="../outputs/03_claude/CL02P_제작자확인문제.pdf">PDF</a> · <a href="../outputs/03_claude/CL02P_제작자확인문제.hwpx">HWPX</a>. <strong>AI 답변 예시:</strong> <a href="../outputs/03_claude/CL02P_공개문서_배포답안.docx">Word</a> · <a href="../outputs/03_claude/CL02P_공개문서_배포답안.pdf">PDF</a> · <a href="../outputs/03_claude/CL02P_공개문서_배포답안.hwpx">HWPX</a>. 필요할 때 한 형식만 선택합니다. AI 예시가 모든 충돌·조건을 찾아낸 것은 아니므로 위 원문 확인을 생략하지 않습니다.</p>
+</details>
+<h2 id="cl03-artifact">CL03. 진행현황 대시보드·Artifact 만들기</h2>
+<p><strong>목표:</strong> 12개 과제를 상태·담당 역할로 걸러 보는 화면을 만들고 숫자를 확인합니다.</p>
+<h3 id="_13">지금 준비할 파일</h3>
+<p><strong>AI 첨부 1개:</strong> CSV입니다. Excel은 PC에서 대조할 때만 열고 중복 첨부하지 않습니다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>파일</th>
+<th>쓰는 이유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../materials/03_claude/프로젝트_진행현황_가상.csv">진행현황 CSV</a></td>
+<td>12개 과제의 대시보드 입력</td>
+</tr>
+<tr>
+<td><a href="../materials/03_claude/프로젝트_진행현황_가상.xlsx">대조용 진행현황 Excel</a></td>
+<td>화면의 과제 ID·상태·역할·값 확인</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_14">바로 할 일</h3>
+<ol>
+<li>새 대화에 CSV <strong>1개</strong>를 첨부합니다.</li>
+<li>다음 요청을 보냅니다.</li>
+<li>생성된 Artifact를 열어 표와 필터가 보이는지 확인합니다.</li>
+</ol>
+<p>요청문 원본: <a href="../prompts/CL03_진행현황Artifact.txt">CL03</a></p>
+<pre><code class="language-text">프로젝트_진행현황_가상.csv의 12개 과제를 읽고 진행현황 대시보드를 Artifact로 만들어 주세요.
+CSV 열은 과제 ID,과제,담당 역할,시작일,예정일,상태,진행률 %,쟁점,근거 문서,자료구분입니다.
+기준일은 자료에 명시된 2026-11-30입니다.
+예정 착수일을 실제 계약일로 확정하지 마세요.
+표시: 전체·상태별 건수, 담당 역할별 과제, 예정일·진행률·쟁점·근거 문서를 담은 상세 표.
+상태와 담당 역할 필터를 조작할 수 있게 하고 필터 후 건수·목록도 함께 바뀌게 하세요.
+제출기한 충돌과 미확정 제안은 해결된 것처럼 숨기지 마세요.
+지연 판단이 가능하지 않으면 확인 필요로 남기세요.
+데이터는 첨부 CSV에만 근거하고 외부 서비스·실시간 정보는 연결하지 마세요.
+기준일을 넣으세요.
+실제 실행 가능한 화면을 만들 수 없다면 결과 형태와 제한을 설명하고 코드·문서·이미지를 동작한 앱이라고 표현하지 마세요.
+</code></pre>
+<figure><img alt="생성된 대시보드를 엽니다." src="../captures/annotated/03_claude/CL03_02_actual_dashboard.png" /><figcaption>생성된 대시보드를 엽니다.</figcaption></figure>
+<p>앱이 응답하지 않으면 같은 계정의 웹에서 저장된 대화를 열어 결과를 확인합니다. 단순 코드나 이미지가 나온 경우 실제 작동하는 화면과 구분합니다.</p>
+<figure><img alt="전체 12개 과제와 필터를 확인합니다." src="../captures/annotated/03_claude/CL03_03_web_dashboard.png" /><figcaption>전체 12개 과제와 필터를 확인합니다.</figcaption></figure>
+<h3 id="_15">필터를 직접 눌러 확인하세요</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>할 일</th>
+<th>확인할 것</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>전체 보기</td>
+<td>과제 ID 12개가 중복 없이 있는지</td>
+</tr>
+<tr>
+<td>진행 선택</td>
+<td>진행 과제만 남고 숫자도 맞는지</td>
+</tr>
+<tr>
+<td>고객안내담당 함께 선택</td>
+<td>상태·역할 두 조건이 함께 적용되는지</td>
+</tr>
+<tr>
+<td>검증담당 선택</td>
+<td>해당 역할만 표시되는지</td>
+</tr>
+<tr>
+<td>필터 초기화</td>
+<td>전체 목록으로 돌아오는지</td>
+</tr>
+<tr>
+<td>상세 표 읽기</td>
+<td>쟁점·근거 문서·기준일이 남아 있는지</td>
+</tr>
+</tbody>
+</table></div>
+<figure><img alt="진행 상태를 선택하고 목록·숫자를 확인합니다." src="../captures/annotated/03_claude/CL03_04_status_filter.png" /><figcaption>진행 상태를 선택하고 목록·숫자를 확인합니다.</figcaption></figure>
+<figure><img alt="진행과 고객안내담당을 함께 선택합니다." src="../captures/annotated/03_claude/CL03_05_combined_filter.png" /><figcaption>진행과 고객안내담당을 함께 선택합니다.</figcaption></figure>
+<figure><img alt="검증담당의 과제를 확인합니다." src="../captures/annotated/03_claude/CL03_06_role_filter.png" /><figcaption>검증담당의 과제를 확인합니다.</figcaption></figure>
+<figure><img alt="초기화해 전체 12개 과제로 돌아옵니다." src="../captures/annotated/03_claude/CL03_07_reset.png" /><figcaption>초기화해 전체 12개 과제로 돌아옵니다.</figcaption></figure>
+<p>카드 숫자와 표가 다른 조건을 쓰면 같은 대화에서 다음 요청을 보냅니다.</p>
+<p>요청문 원본: <a href="../prompts/CL03R_Artifact필터수정.txt">CL03R</a></p>
+<pre><code class="language-text">Artifact의 필터와 표시 숫자를 다시 점검해 주세요.
+전체 해제 상태의 과제 ID 목록이 CSV의 12개 고유 과제와 일치하는지 확인하고,
+상태 하나 또는 담당 역할 하나를 선택하면 카드 숫자와 상세 표가 같은 필터를 적용하도록 수정하세요.
+필터 해제로 전체 목록을 복원하고, 쟁점·근거 문서·기준일를 유지하세요.
+수정한 부분과 검증 방법을 설명하세요.
+</code></pre>
+<figure><img alt="수정 후 진행+고객안내담당 조건의 카드와 표가 함께 바뀌는지 확인합니다." src="../captures/annotated/03_claude/CL03_09_revised_combination.png" /><figcaption>수정 후 진행+고객안내담당 조건의 카드와 표가 함께 바뀌는지 확인합니다.</figcaption></figure>
+<figure><img alt="수정한 화면에서도 초기화가 되는지 확인합니다." src="../captures/annotated/03_claude/CL03_10_revised_reset.png" /><figcaption>수정한 화면에서도 초기화가 되는지 확인합니다.</figcaption></figure>
+<h3 id="_16">결과와 원자료를 저장하세요</h3>
+<p>제공되는 저장·내보내기 메뉴를 사용하고 다시 엽니다. 출처의 원자료를 내보낼 수 있으면 <strong>CSV → File → Download → 파일 저장</strong>으로 저장합니다. CSV 내보내기와 대시보드 HTML 다운로드는 구분합니다.</p>
+<figure><img alt="출처 원자료를 열고 CSV 다운로드를 선택합니다." src="../captures/annotated/03_claude/CL03_08_source_export.png" /><figcaption>출처 원자료를 열고 CSV 다운로드를 선택합니다.</figcaption></figure>
+<p>필터가 작동하지 않으면 수정 요청을 보냅니다. <a href="https://support.claude.com/en/articles/17153992-what-are-artifacts-and-how-do-i-use-them">Artifact 사용 안내</a></p>
+<h3 id="_17">성공 확인</h3>
+<p>상태·역할·초기화 세 조작에서 카드와 상세 표가 같은 조건을 적용하고, 원자료 12개 과제·쟁점·근거가 남아 있으면 완료입니다.</p>
+<details>
+<summary>선택 참고: 필터 확인 답과 설명 예시</summary>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>조건</th>
+<th>완료·진행·대기 카드</th>
+<th style="text-align: right;">확인 필요</th>
+<th style="text-align: right;">상세 표</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>전체</td>
+<td>3·4·5</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">12행</td>
+</tr>
+<tr>
+<td>진행</td>
+<td>0·4·0</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4행</td>
+</tr>
+<tr>
+<td>진행+고객안내담당</td>
+<td>0·2·0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2행</td>
+</tr>
+<tr>
+<td>검증담당</td>
+<td>0·0·3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3행</td>
+</tr>
+<tr>
+<td>초기화</td>
+<td>3·4·5</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">12행</td>
+</tr>
+</tbody>
+</table></div>
+<p>진행 과제는 T-03~T-06, 진행+고객안내담당은 T-03·T-04, 검증담당은 T-07·T-08·T-12입니다. 전체 CSV 카드 12건은 비교 기준이고, 필터 결과와 구분합니다. ‘확인 필요 10건’은 미완료 9건과 T-11의 미해결 쟁점에서 계산한 값이며 지연이 확정된 10건이 아닙니다. T-07의 300건 제안과 T-11의 제출기한 충돌을 해결된 것으로 바꾸지 않습니다.</p>
+<p><strong>대시보드 설명 예시:</strong> <a href="../outputs/03_claude/CL03_대시보드_배포답안.docx">Word</a> · <a href="../outputs/03_claude/CL03_대시보드_배포답안.pdf">PDF</a> · <a href="../outputs/03_claude/CL03_대시보드_배포답안.hwpx">HWPX</a>. <strong>필터 수정 설명:</strong> <a href="../outputs/03_claude/CL03R_필터수정_배포답안.docx">Word</a> · <a href="../outputs/03_claude/CL03R_필터수정_배포답안.pdf">PDF</a> · <a href="../outputs/03_claude/CL03R_필터수정_배포답안.hwpx">HWPX</a>. 각각 한 형식만 선택합니다.</p>
+</details>
+<details>
+<summary>다른 형식이 필요한 경우</summary>
+<p>AI에 첨부하기만 한다면 앞에서 받은 PDF로 충분합니다. <strong>입력 문서를 PC에서 직접 고칠 때만</strong> 아래 자료를 받습니다.</p>
+<p><a href="../배포/노션_모듈준비물/준비물_03_claude.zip">문서 검토 실습 입력자료 — Word·한글 포함</a></p>
+<p>압축을 풀고 필요한 문서의 <strong>Word 또는 한글 한 형식만</strong> 엽니다. 같은 내용의 PDF·Word·한글을 모두 AI에 첨부하지 않습니다. Excel·CSV는 앞 실습에서 받은 파일을 계속 사용합니다.</p>
+</details></article><nav class="page-nav" aria-label="이전·다음 장"><a href="../chapters/02-chatgpt.html">← ChatGPT 업무 활용</a><a href="../chapters/04-gemini.html">Gemini 업무 활용 →</a></nav><footer class="footer">한전 AI 업무활용 실습교재 · 마크다운 원본 기반<br>필요한 자료는 각 실습에서 내려받습니다.</footer></main></div></body></html>

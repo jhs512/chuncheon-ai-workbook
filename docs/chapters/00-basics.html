@@ -1,0 +1,77 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>기본 개념 · 한전 AI 업무활용 실습교재</title><meta name="description" content="Windows의 ChatGPT·Claude 앱과 Gemini 웹으로 진행하는 6시간 AI 업무활용 실습교재. 실습 자료와 요청문, 실제 화면 캡처를 제공합니다."><link rel="stylesheet" href="../assets/site.css"><script src="../assets/site.js" defer></script></head><body class="chapter" data-root="../"><a class="skip" href="#main">본문으로 이동</a><aside class="sidebar" aria-label="교재 탐색"><div class="eyebrow">AI WORKBOOK</div><a class="brand" href="../index.html">한전 AI 업무활용<br>실습교재</a><div class="course">Windows · ChatGPT · Claude · Gemini<br>6시간 실습 과정</div><div class="search-wrap"><label class="sr-only" for="search">교재 검색</label><input id="search" type="search" placeholder="교재에서 검색" autocomplete="off"><div class="search-results" aria-live="polite"></div></div><nav class="nav" aria-label="장별 목차"><a href="../index.html"><span class="num">↗</span>시작하기</a><a href="../chapters/00-basics.html" aria-current="page"><span class="num">00</span>기본 개념</a><a href="../chapters/01-setup.html"><span class="num">01</span>계정과 Windows 앱</a><a href="../chapters/02-chatgpt.html"><span class="num">02</span>ChatGPT 업무 활용</a><a href="../chapters/03-claude.html"><span class="num">03</span>Claude 업무 활용</a><a href="../chapters/04-gemini.html"><span class="num">04</span>Gemini 업무 활용</a><a href="../chapters/05-apply.html"><span class="num">05</span>내 업무 적용·정리</a></nav><div class="sidebar-footer"><a href="https://axia-llm.dreamitbiz.com" target="_blank" rel="noopener">LLM 실습 플랫폼 ↗</a><a href="https://jangka44.notion.site/AI-3f6d4cdd4f478194a8dbda7adef5ccbd" target="_blank" rel="noopener">노션 교재 ↗</a></div></aside><div class="workspace"><header class="topbar"><button class="menu-button" type="button" aria-expanded="false">목차</button><span>기본 개념</span><button class="print-button" type="button">인쇄</button></header><main id="main"><article><h1 id="0">0. 업무에 쓰기 전에 알아둘 기본 개념</h1><details class="toc"><summary>이 장의 목차</summary><div class="toc">
+<ul>
+<li><a href="#_1">기본 개념을 짧게 이해하기</a></li>
+<li><a href="#_2">요청을 다섯 가지로 정리하기</a></li>
+<li><a href="#_3">대화를 이어갈 때와 새로 시작할 때</a></li>
+<li><a href="#_4">다음으로 할 일</a></li>
+</ul>
+</div>
+</details>
+<p><strong>목표:</strong> AI에 요청할 때 필요한 기본 용어와 요청 구성을 이해합니다.</p>
+<p><strong>지금 할 일:</strong> 아래 기본 개념과 요청 예시를 읽고 <a href="../chapters/01-setup.html">계정과 앱 준비</a>로 이동하세요. 이 장에는 별도 준비물이 없습니다.</p>
+<p><strong>OT 30분:</strong> 기본 개념 → 요청 구성 → 실습 준비 확인 순서입니다.</p>
+<h2 id="_1">기본 개념을 짧게 이해하기</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>용어</th>
+<th>뜻</th>
+<th>업무에서 쓰는 방법</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LLM</td>
+<td>입력에 맞는 언어 답변을 생성하는 모델입니다. 사실·계산 오류가 있을 수 있습니다.</td>
+<td>보고서 초안을 받고 원자료와 대조합니다.</td>
+</tr>
+<tr>
+<td>토큰</td>
+<td>모델이 입력·출력을 처리하는 작은 단위입니다. 한 글자나 한 단어와 항상 같지는 않습니다.</td>
+<td>긴 자료에서는 필요한 문서·항목을 지정합니다.</td>
+</tr>
+<tr>
+<td>컨텍스트</td>
+<td>이번 답변에 참고하는 요청·앞선 대화·첨부자료 등입니다.</td>
+<td>보고기간·단위·파일명을 함께 줍니다.</td>
+</tr>
+<tr>
+<td>프롬프트</td>
+<td>AI에 보내는 요청입니다.</td>
+<td>목적·자료·조건·결과 형식·확인 기준을 적습니다.</td>
+</tr>
+<tr>
+<td>지침</td>
+<td>작업할 때 따를 기준입니다.</td>
+<td>“없는 날짜는 만들지 말고 확인 필요로 표시해.”</td>
+</tr>
+<tr>
+<td>스킬</td>
+<td>반복 업무에 쓸 지침·절차를 저장해 다시 사용하는 기능입니다. 서비스마다 방식이 다릅니다.</td>
+<td>FAQ를 근거로 답변하는 순서를 저장합니다.</td>
+</tr>
+<tr>
+<td>플러그인</td>
+<td>스킬이나 연결 기능 등을 묶어 설치·사용하는 기능입니다.</td>
+<td>보고서 작성 절차를 새 대화에서 다시 사용합니다.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="_2">요청을 다섯 가지로 정리하기</h2>
+<p><strong>목적 → 자료 → 조건 → 결과 → 확인 기준</strong>을 적습니다.</p>
+<pre><code class="language-text">목적: 월별 실적 보고서 초안 작성
+자료: 첨부한 실적 Excel과 보고서 입력 메모
+조건: 메모의 기간·단위를 사용하고 없는 사실은 확인 필요로 표시
+결과: 요약 3문장, 업무별 표, 확인사항
+확인 기준: 합계·비율의 계산식과 근거 파일·시트·열을 제시
+</code></pre>
+<p>위 문장은 요청 구성 예시입니다. 실제 첨부·전송은 ChatGPT 실습에서 합니다.</p>
+<h2 id="_3">대화를 이어갈 때와 새로 시작할 때</h2>
+<p>같은 보고서를 고칠 때는 “방금 작성한 보고서에서…”로 이어갑니다. 다른 업무라면 새 대화를 열고 목표·조건·자료를 다시 줍니다.</p>
+<figure><img alt="파일 추가 메뉴에서 컴퓨터에서 업로드를 선택합니다." src="../captures/annotated/03_claude/CL02_upload_dialog.png" /><figcaption>파일 추가 메뉴에서 컴퓨터에서 업로드를 선택합니다.</figcaption></figure>
+<p>파일 추가 메뉴의 <strong>컴퓨터에서 업로드</strong>를 선택합니다.</p>
+<figure><img alt="Gemini 입력창 왼쪽 메뉴에서 파일 업로드를 선택합니다." src="../captures/annotated/04_gemini/GE00_upload_menu.png" /><figcaption>Gemini 입력창 왼쪽 메뉴에서 파일 업로드를 선택합니다.</figcaption></figure>
+<p>Gemini에서는 입력창 왼쪽 메뉴의 <strong>파일 업로드</strong>를 선택합니다. 각 도구의 실습에서 해당 준비물을 첨부합니다.</p>
+<h2 id="_4">다음으로 할 일</h2>
+<p><a href="../chapters/01-setup.html">계정과 앱 준비</a>에서 설치된 앱과 Gemini 웹을 열고 실습 파일을 확인하세요. 그다음 ChatGPT 보고서 실습으로 이동합니다.</p>
+<p>이 과정에서는 보고서 재사용을 <strong>플러그인</strong>, 자료 검토를 <strong>Gemini 노트북</strong>, 고객 답변 재사용을 <strong>스킬</strong>로 배웁니다. 해당 메뉴가 안 보이면 다음 장의 대체 행동을 따릅니다.</p></article><nav class="page-nav" aria-label="이전·다음 장"><a href="../index.html">← 시작하기</a><a href="../chapters/01-setup.html">계정과 Windows 앱 →</a></nav><footer class="footer">한전 AI 업무활용 실습교재 · 마크다운 원본 기반<br>필요한 자료는 각 실습에서 내려받습니다.</footer></main></div></body></html>

@@ -1,0 +1,656 @@
+{
+  "canonical_merged_sha256": "033e9f5b0e2a690e861a6992769f5a4505b83a455ce0fd383a989f87486b2334",
+  "pages": [
+    {
+      "source": "노션_첫페이지.md",
+      "source_sha256": "217d609bcfd7275415aef77f7f1bf21880933e585264eb6098694361dae64d2b",
+      "output": "index.html",
+      "output_sha256": "759a3f22f9e61a04f386c4ba2049effe894bed779da12a607c554f04b6ab7e4f"
+    },
+    {
+      "source": "chapters/00_기본개념.md",
+      "source_sha256": "44b725be22355710eaff14b02880f8ce69086af86f675f27c82f21a5e3d689f3",
+      "output": "chapters/00-basics.html",
+      "output_sha256": "92eca55487e471e94ddb178dcc2389cc34238029dde257010b07d534fd1f5dd7"
+    },
+    {
+      "source": "chapters/01_계정과설치.md",
+      "source_sha256": "8460db9774d3f3301221defc652f703a54af198912f4af229b8334be743e39c6",
+      "output": "chapters/01-setup.html",
+      "output_sha256": "23e95c3b435c3f29940c19dfebcfb28d0cdb4f329ba224f2f4ed3e2b0fe34ca0"
+    },
+    {
+      "source": "chapters/02_ChatGPT.md",
+      "source_sha256": "c5f7784cac6b441b2bee007d0254d962b20bcac62c2b8bf31a8e150701988ef7",
+      "output": "chapters/02-chatgpt.html",
+      "output_sha256": "412bb70c489b84f9c9deee8ed6471a2f2d30c2c595931447f57ccb6871ae4338"
+    },
+    {
+      "source": "chapters/03_Claude.md",
+      "source_sha256": "c7f9d3361bff78969964af095636c038ebba03d75dc5e5d3c2c6d60cff14d99a",
+      "output": "chapters/03-claude.html",
+      "output_sha256": "03339ed7b0a7f5368e69075a15d0bd2521565271f831723416c203e9add8f6ff"
+    },
+    {
+      "source": "chapters/04_Gemini.md",
+      "source_sha256": "3831813e13a3ee6e3c02a949fc222a0710c431754a1594687e4968f39f42ad89",
+      "output": "chapters/04-gemini.html",
+      "output_sha256": "2c8bb0119512cf710dc85b9e36cb2247543871f644d01cb6fcdcc74b1bbc45c0"
+    },
+    {
+      "source": "chapters/05_내업무적용.md",
+      "source_sha256": "46895c8a6d3a8f6822e2fb14fc68433860f1e308692b15511879894c6159ea6f",
+      "output": "chapters/05-apply.html",
+      "output_sha256": "d9f375d304386f7fe46ad9d5e1d27690dc58caea77b1ecf1f89fd6d4fcea124d"
+    }
+  ],
+  "assets": [
+    {
+      "path": "captures/annotated/00_setup/SU03_chatgpt_download.png",
+      "sha256": "07a81e610b1b066d33116da7e980e70d7f422e87fd63d15e3757aa096de601b8"
+    },
+    {
+      "path": "captures/annotated/00_setup/SU04_claude_download.png",
+      "sha256": "790a07443cff0749d3943093e2ac284000e3a25f49f5933fb5d13f6f0063e946"
+    },
+    {
+      "path": "captures/annotated/00_setup/SU05_chrome_download.png",
+      "sha256": "52616ec26f1106a2c26524db72ec2374237c92d8393f47d0ca09183fd7cde834"
+    },
+    {
+      "path": "captures/annotated/00_setup/SU06_gemini_signed_in.png",
+      "sha256": "5fcdaf43ddb2f8702c73848fa75d005846fea021c2892692129fd0aaf7a6d3f5"
+    },
+    {
+      "path": "captures/annotated/00_setup/SU07_windows_mcp_running.png",
+      "sha256": "d95da00aadd2dc7f6e349bb9f857959bf13ec0ed3caf655dbdee004df41ce44c"
+    },
+    {
+      "path": "captures/annotated/02_chatgpt/CG01_01_result_table.png",
+      "sha256": "7914a963d74ecd7eb71d340a238b4c35143d40d6d17cfff1b4a3c74ab6811b88"
+    },
+    {
+      "path": "captures/annotated/02_chatgpt/CG01_03_editor_open.png",
+      "sha256": "cd849d0acc90b134eaf4fe53340700f23a7c9d2f528a21026a18d02d2a4908ad"
+    },
+    {
+      "path": "captures/annotated/02_chatgpt/CG01_04_word_download_failed.png",
+      "sha256": "1c3cfb073df9456a87b25a773c3c7910493c99ff4636caafdf678a040ad18fcb"
+    },
+    {
+      "path": "captures/annotated/02_chatgpt/CG02_01_plugin_created.png",
+      "sha256": "27b8be75273ab021146a4b3651540d39825d5f3c9640f3b8a15e0cc7452403b4"
+    },
+    {
+      "path": "captures/annotated/02_chatgpt/CG02_02_plugin_test_prompt.png",
+      "sha256": "72b23b466180a9d96527e14fe168802012acf07760122fb3c802f057abffb737"
+    },
+    {
+      "path": "captures/annotated/02_chatgpt/CG02_03_plugin_result.png",
+      "sha256": "04dafe8cf2b0174db45f488160ecd0ec337a8b7b4d4f63270520fbf4ef665d50"
+    },
+    {
+      "path": "captures/annotated/02_chatgpt/CG03_01_attached_prompt.png",
+      "sha256": "ae29788478995042a9feb9aadee876470543412c5365a609712930e81ada02ee"
+    },
+    {
+      "path": "captures/annotated/02_chatgpt/CG03_02_comparison.png",
+      "sha256": "d49bd1321c91c357264375586c53e682650047065bf4fa883c9d34370bd7e2d0"
+    },
+    {
+      "path": "captures/annotated/02_chatgpt/CG03_03_definition_revision.png",
+      "sha256": "c5575d2263f56155d6ea41a0a7dbf64d8d89cc720b4dfa0ec3955d07e011d240"
+    },
+    {
+      "path": "captures/annotated/03_claude/CL01_02_findings.png",
+      "sha256": "98a71b5183ef171bdc34db85cbfd609a1cd9331aceb5c983f5c88c0c57c8ff8f"
+    },
+    {
+      "path": "captures/annotated/03_claude/CL01_03_four_pdfs_once.jpg",
+      "sha256": "89ed90b13efc053a56134b89e478a250b31c6db86135914b7966a8c1f72e9749"
+    },
+    {
+      "path": "captures/annotated/03_claude/CL02_01_create_project.png",
+      "sha256": "4868437276457bac660114aa3e4ab2b5973343d8e4393884cd0bf402c063e25a"
+    },
+    {
+      "path": "captures/annotated/03_claude/CL02_02_instructions.png",
+      "sha256": "38e9f8dc0b4188e07eeae856453449e59d44f154eb9aa0b2ddf777ffed269473"
+    },
+    {
+      "path": "captures/annotated/03_claude/CL02_03_context_uploaded.png",
+      "sha256": "5bfcf18b5bc1a3060ee69e2c5323a47a5e387e494efebd993417b1da1a0fd5ef"
+    },
+    {
+      "path": "captures/annotated/03_claude/CL02_04_evidence_answer.png",
+      "sha256": "347891d9812f5da7634aba09827393443bca8c198d41d5a5fd2170cb02a9effc"
+    },
+    {
+      "path": "captures/annotated/03_claude/CL02_05_public_answer.png",
+      "sha256": "b30c26e8d8572cebc930570dbccc6a1cf361c22482f2cfd656dd8bd97a587104"
+    },
+    {
+      "path": "captures/annotated/03_claude/CL02_06_project_revision.png",
+      "sha256": "08ec920d1059c21dd6e9e70784f860c80dea9572ffc8693580f5a6fae2f8138e"
+    },
+    {
+      "path": "captures/annotated/03_claude/CL02_07_public_revision.png",
+      "sha256": "b98b65e800f8a0c991b318c72a93d7698e72953c6151691913f73bf64ed5c5e4"
+    },
+    {
+      "path": "captures/annotated/03_claude/CL02_upload_dialog.png",
+      "sha256": "192e62b76a30056ea78686e10cdae289020b1309dea081b25ccced0d81fe3a67"
+    },
+    {
+      "path": "captures/annotated/03_claude/CL03_02_actual_dashboard.png",
+      "sha256": "5059bdefbf7e9dd36fd249abe8eb932f62eec7d9ebdcb914c7c0862777d0a1bb"
+    },
+    {
+      "path": "captures/annotated/03_claude/CL03_03_web_dashboard.png",
+      "sha256": "798116eedb42ee6ba8de7970380b0c5e6fac1045f7a520ba2920916cc9a620f6"
+    },
+    {
+      "path": "captures/annotated/03_claude/CL03_04_status_filter.png",
+      "sha256": "f3b81316cd1dadafefd9341060e972b6c90d64214ec957f01bae32fe7a80003f"
+    },
+    {
+      "path": "captures/annotated/03_claude/CL03_05_combined_filter.png",
+      "sha256": "657148a40a847025316432ac366ca3e8c50c8ca33cd9e395314349dba180fd12"
+    },
+    {
+      "path": "captures/annotated/03_claude/CL03_06_role_filter.png",
+      "sha256": "ddabf3618ef3d57f7b0f80a84311b3c3a61374950049b3d4d9da2beba4e08dae"
+    },
+    {
+      "path": "captures/annotated/03_claude/CL03_07_reset.png",
+      "sha256": "1ddd28d3874694d21889741aa6702944b6cc8bce41b4caceb7f7eaba25f99307"
+    },
+    {
+      "path": "captures/annotated/03_claude/CL03_08_source_export.png",
+      "sha256": "af515931451727851a2dcfc7bf5a5cbe7f42687de0f879d1d884418a261f54f2"
+    },
+    {
+      "path": "captures/annotated/03_claude/CL03_09_revised_combination.png",
+      "sha256": "c31cc8b62374d4bf24e49b61230b22846ae9e1505bdd124057a5a752c41ba0a0"
+    },
+    {
+      "path": "captures/annotated/03_claude/CL03_10_revised_reset.png",
+      "sha256": "425b995bb305ac27ea403e9f298d2db249c886a40c35644eaee115b82f2e43c5"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE00_upload_menu.png",
+      "sha256": "b3154f71d14b6075939e386301db7f4beed450945b794f512eb7aae0e5fe0279"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE01_03_export_menu.png",
+      "sha256": "36d448b638aac129fc338e14398f3b89c570370897f2acfc5baed0c150929088"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE01_04_drive_saved.png",
+      "sha256": "3815f905b6e71ccf764b03d6014af7216503181a5ff2dd563ce98d42fac34cd2"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE01_06_convert_docs.png",
+      "sha256": "a30ade9b751d0c482c72bc5a8ea030b99d247e846d549c33548eda94adca22af"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE01_07_native_docs.png",
+      "sha256": "cf0f47b45e32fee8198e6f9a62f4066d018da3f937a1dd8419b1657f0eccce84"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE01_09_slides_export.png",
+      "sha256": "fd8e426b430d7901a9b4c35c743609958f7b7ae633923eaa3da68fe25c2ff9d1"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE01_10_slides_created.png",
+      "sha256": "8712a23425a78b2c90054360cc094c245d89781df2e97b85fa65ccdc83c692fc"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE01_11_google_slides.png",
+      "sha256": "2051d015a7dbb9e7569baa9b451f61e504f40b3d34be21ccd6e455f0db971ec6"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE01_12_image_viewer.png",
+      "sha256": "edf632ea21ccbcb645bd9d8bcc0725c09de30d029bc1e207ea4809f38f0cdedf"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE01_15_final_a4_docs.png",
+      "sha256": "4477ce2151ec271515d29b66a2f9d4c6685aab90d6ad10237dd61e55dc3f8c90"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE01_16_image_text_edit.png",
+      "sha256": "c1905ae00c235ab2e8295805712f47cb325f1dddfd5f76a992483c8642fc3863"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE01_18_image_final.png",
+      "sha256": "599e5bde5754309c8a231cda5318e8a85a1d8e42a34b0fd45b875a6ee364bc5b"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE01_20_slides_final_native.png",
+      "sha256": "669326907330d974c9a66fc5cb907afe6eb0985dbd4de948bb022c496e140161"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE02A_01_audio_settings.jpg",
+      "sha256": "27edbc5f7e217cbc92ae53d164d0a04c5dcd63fe320e5c0e1f0b32aa9ac0c30f"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE02_01_create_notebook.png",
+      "sha256": "b1729324c922d3b3db8f5e2c92797dc49f964c5578c562910bddfdb574acb883"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE02_02_sources.png",
+      "sha256": "6f3c1046bc1d3be08bd457f671abefa70d01be5728a3d1bc26f681efab930583"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE02_04_unapproved_proposal.png",
+      "sha256": "6d688dc1bef2e7f278920337f738877cac4f13b858ea52759589d27250232eb1"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE03_01_skill_form.png",
+      "sha256": "2c3aeddb48659e28022726ccb2107f60462ea96b1d465808d06a078fef4510d2"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE03_02_skill_active.png",
+      "sha256": "559c8c541332f33e454741c5e5d4a93d8b016dc948f1c0730ab88722ee4d1e46"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE03_03_out_of_scope_reply.png",
+      "sha256": "7592ce20ee5f1bdaf0d0f96b936859826e4777ca1dfc00e982c9c0bf8efe22b1"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE03_04_skill_used.png",
+      "sha256": "26cecfa5039316d1cddbcd3fab15d5355398db753dbaf6b6ad43d1a1d8b37dbd"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE04F_01_native_dashboard.png",
+      "sha256": "80c33e03e74a42e807083320d9cc488d58b2b15db3ba69fc5be112ca8995c93f"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE04F_02_native_business_chart.png",
+      "sha256": "32776ebc9daad6c7fe3a9f00c7baaef3d67c98f2367435c8fc5ae314c5f93b27"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE04F_03_native_rows.png",
+      "sha256": "40bc5a2373937e2167f066b4783ca775a60a9405b9872aaaebde0593e89c8085"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE04F_04_native_checks.png",
+      "sha256": "728fa723966df97c5e46e60a54fe2ddd5d8f642d1e3a5a188b3b2a156185a3fb"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE04_03_retry.png",
+      "sha256": "4c70d718e16675d5940e57e1fe74176e1db415869a86495ba137fb563c9238e0"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE04_04_totals.png",
+      "sha256": "d28fc56e2abd6a32d802c3ff1e768bc42b543d1a514250ea93aab54e3d163a55"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE04_05_export_menu.png",
+      "sha256": "f9073614c9b8308f024ed06ae8019d85a30852cccd87f2f7d2fc7633f3617018"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE04_06_sheet_created.png",
+      "sha256": "9daf6e332b3d037ce5479fba305561a6047898619447eaa746c72e5e0dbf8cd0"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE04_07_google_sheet.png",
+      "sha256": "b21fca96abca43f145230e3e1e314e48c9a966b0ad9d343af119f4a7a7de16bf"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE04_08_actual_line_chart.png",
+      "sha256": "c367f2b85233d62bc9989dab37dbd6fedc90eab2e2c253e0c7769fdf463e7302"
+    },
+    {
+      "path": "captures/annotated/04_gemini/GE04_09_actual_bar_chart.png",
+      "sha256": "00475a23912b632a6ed849bb3fca8564c27eb590bceef210c4f60d3477c7d0da"
+    },
+    {
+      "path": "materials/00_public/ALIO_국립공원공단_직원평균보수.pdf",
+      "sha256": "58806ec8abf56198aed59884bcb55fa86f19979ec8052d888c92955b6a467d26"
+    },
+    {
+      "path": "materials/00_public/ALIO_통일연구원_직원평균보수.pdf",
+      "sha256": "1eb872ffc8340cbc5438f837552e37d3f7a5418ab9d1a1dd8beddf7a32e80527"
+    },
+    {
+      "path": "materials/00_public/ALIO_한국식품안전관리인증원_직원평균보수.pdf",
+      "sha256": "4e86dd4d4bc9f1047a13081cfc0217997ccdf6a71e8ad3e08622ac02b8d70e67"
+    },
+    {
+      "path": "materials/00_public/계약집행기준_20260602_제367호_연혁.pdf",
+      "sha256": "9846dae3acbef1b877efcef216fa3d157ee471a50be3b4bd9f849caed9353504"
+    },
+    {
+      "path": "materials/00_public/입찰공고문_화학물질안전원.pdf",
+      "sha256": "293f634bd5b3623cb8046484641401b3b177c9bc344a24ddac3819a302821e73"
+    },
+    {
+      "path": "materials/02_chatgpt/ALIO_3기관_비교_실제자료.xlsx",
+      "sha256": "f514cd9b8c8c15e9565ff5b84209e9ae30a26300e251e1a4950cdb85e086d4da"
+    },
+    {
+      "path": "materials/02_chatgpt/보고서작성_입력메모_가상.pdf",
+      "sha256": "fa6caa0f61b07c9236d130790db7ad571dc5d4220d2a4ce59c4c42cdfdc3d793"
+    },
+    {
+      "path": "materials/02_chatgpt/월별사업실적_가상.xlsx",
+      "sha256": "0a2c6be0bdc5bce13005b4c1707dfbb8e8b355250a064aa76c8f61f76d53db17"
+    },
+    {
+      "path": "materials/03_claude/문서검토_업무지침_가상.pdf",
+      "sha256": "707f8ce87c5f17d63fb96ebff4468929d03192f67a130591865b976e99bc99a3"
+    },
+    {
+      "path": "materials/03_claude/입찰공고문_가상.pdf",
+      "sha256": "8ac7c6b3119af44a1b3f264a7ed4c7a8ec7a1efa4f545d9f160c0cdeecedbc57"
+    },
+    {
+      "path": "materials/03_claude/제안요청서_가상.pdf",
+      "sha256": "15b1061a890a81769fe886b796cc1e8937afab0a91ae1efa3a923357fb8702ea"
+    },
+    {
+      "path": "materials/03_claude/프로젝트_진행현황_가상.csv",
+      "sha256": "3d3ef64085944a07919e54c079f009094cf793dfe4b2bc1ca68bf52b1717ee2a"
+    },
+    {
+      "path": "materials/03_claude/프로젝트_진행현황_가상.xlsx",
+      "sha256": "f8f7dc2bbcc9dc8d9b732a13c773f1a05246e1ec3c5bcd033ae4b2fd179d3e26"
+    },
+    {
+      "path": "materials/03_claude/회의록_가상.pdf",
+      "sha256": "18b68923ffb6ff95b440b7807f9923934b2729eb7e36afc3558559d742285823"
+    },
+    {
+      "path": "materials/04_gemini/문서PPT이미지_제작브리프_가상.pdf",
+      "sha256": "7b42436a14fd77ae81fa3e47f555c5c563fcca1f25327e29a207b17124f1938e"
+    },
+    {
+      "path": "materials/04_gemini/민원답변_FAQ_가상.pdf",
+      "sha256": "d0a8bd7e94e9190bf51c44781fdad0b5e380c44904acf3679ae2337807b1294d"
+    },
+    {
+      "path": "materials/04_gemini/민원사례_30건_가상.csv",
+      "sha256": "5a187f8a06ad344b0be7ca6917f355602ca555a8edf6eac54aca0c45995a838b"
+    },
+    {
+      "path": "materials/04_gemini/민원사례_30건_가상.xlsx",
+      "sha256": "e30bd9a5e7ff05e36da80dbb34e705fc34c73d0a58b536cdab40356279b9089e"
+    },
+    {
+      "path": "materials/04_gemini/조달계약_300건_가상.csv",
+      "sha256": "1ac21dea1d378a1a698ddfc5f568c69c6d2e355ad05ee2e0a6cf18a8d5c2547d"
+    },
+    {
+      "path": "materials/04_gemini/조달계약_300건_가상.xlsx",
+      "sha256": "3e50cd7d14169f7a558c2f043c5bee2031e2730edc90643317f7751e743fb974"
+    },
+    {
+      "path": "outputs/02_chatgpt/CG01_보고서_검증본.docx",
+      "sha256": "42f397ceab483486b7842e1e7601718dd3d659e893921bc4d489a37b31f84792"
+    },
+    {
+      "path": "outputs/02_chatgpt/CG01_보고서_검증본.hwpx",
+      "sha256": "eaa1522a940052c32c38c6c1d63e50307e1f8146f1a0121b145a7d85c071b156"
+    },
+    {
+      "path": "outputs/02_chatgpt/CG01_보고서_검증본.pdf",
+      "sha256": "39d435a0563e1a85e5b31405f1d6101b9c0f4e3889f80047769643a6e9ecc264"
+    },
+    {
+      "path": "outputs/02_chatgpt/CG02_재사용_실제응답.txt",
+      "sha256": "e8f1069a4c6407efc9b02d23aa1f9e3f1f34bff9b71ef753cb3cb20f0254ef0f"
+    },
+    {
+      "path": "outputs/02_chatgpt/CG03_ALIO_비교표_검증본.docx",
+      "sha256": "37eb2a336136200042e68423f6c608d23c193853bede66aa0847b0ea8067e9af"
+    },
+    {
+      "path": "outputs/02_chatgpt/CG03_ALIO_비교표_검증본.hwpx",
+      "sha256": "cf894a085b7f2a3eaf567febee9abf4d0e3f97e7e3f27964573f735ff768d0a6"
+    },
+    {
+      "path": "outputs/02_chatgpt/CG03_ALIO_비교표_검증본.pdf",
+      "sha256": "1d0f82bd5eeddd58cfbf828dd41f5eb044fb9b0572e81438c9dadf4d470b57e8"
+    },
+    {
+      "path": "outputs/03_claude/CL01_문서검토_배포답안.docx",
+      "sha256": "a8ca0a243c072e7de79b2260eaab1f72786d5fbdbac5c6c667f25ab024ee2ff7"
+    },
+    {
+      "path": "outputs/03_claude/CL01_문서검토_배포답안.hwpx",
+      "sha256": "0d30c0b7b43fee67ba25b5c9436dba4f5353ef74900423f6aac80638de5fbbd4"
+    },
+    {
+      "path": "outputs/03_claude/CL01_문서검토_배포답안.pdf",
+      "sha256": "d9c2fbdaeca0b2e6b7f011aa0f7f557d5e263cb3e07d6465a2dda3b7560ee701"
+    },
+    {
+      "path": "outputs/03_claude/CL02P_공개문서_배포답안.docx",
+      "sha256": "d85df3ecb414fd12c503895efd4738bde3c0e9fd18edf0d0f1b6640abcc54e32"
+    },
+    {
+      "path": "outputs/03_claude/CL02P_공개문서_배포답안.hwpx",
+      "sha256": "d2d81d3061dd0bb03e20a865411c9296c80eb2f36c926aafef0b822777cfe534"
+    },
+    {
+      "path": "outputs/03_claude/CL02P_공개문서_배포답안.pdf",
+      "sha256": "88a1791ee63977b606752d58e240dcd2111fbb66890da127a9dc490bd0bfae03"
+    },
+    {
+      "path": "outputs/03_claude/CL02P_제작자확인문제.docx",
+      "sha256": "a8ba544699445f3f323457d3e58b56fcdaa6ab6b0cca580b1af995d3a76885c2"
+    },
+    {
+      "path": "outputs/03_claude/CL02P_제작자확인문제.hwpx",
+      "sha256": "12aabecc59fbc3a18ee44f78384ef376f40f2bf7f7a279420c0ca7d3500c5807"
+    },
+    {
+      "path": "outputs/03_claude/CL02P_제작자확인문제.pdf",
+      "sha256": "969d11f527dca59af4e96b02115dd0f8877ff867e96c4188d7e48a3c996279f1"
+    },
+    {
+      "path": "outputs/03_claude/CL02_프로젝트_배포답안.docx",
+      "sha256": "69a2736e822dc47a383a821f4e68684dfa7e104de8d9f46dabe7f6e02428a05b"
+    },
+    {
+      "path": "outputs/03_claude/CL02_프로젝트_배포답안.hwpx",
+      "sha256": "75f079262eb0d676f277cc14acf6965ec26e2b020cde37717859be1bfba52227"
+    },
+    {
+      "path": "outputs/03_claude/CL02_프로젝트_배포답안.pdf",
+      "sha256": "79b7ce0e7b97424dae335b13bab4913e75733377fd04da8ec2d8202c5617ded9"
+    },
+    {
+      "path": "outputs/03_claude/CL03R_필터수정_배포답안.docx",
+      "sha256": "926f0e6187f3ebf8afd3d5e6893f8c9cb39430543182c0cecc1e936b95d86697"
+    },
+    {
+      "path": "outputs/03_claude/CL03R_필터수정_배포답안.hwpx",
+      "sha256": "42109a3756e539d2eca46fedb8a4400afd55f99bfd75bf60f23079d142ba4b29"
+    },
+    {
+      "path": "outputs/03_claude/CL03R_필터수정_배포답안.pdf",
+      "sha256": "29a2c71abb398e7e3361f979c184d84d156444069930c902234a1c7161d12d58"
+    },
+    {
+      "path": "outputs/03_claude/CL03_대시보드_배포답안.docx",
+      "sha256": "c997e7ef58261eca424ced4da151f8e1008ae015267ff9af45a34395bf1eb73d"
+    },
+    {
+      "path": "outputs/03_claude/CL03_대시보드_배포답안.hwpx",
+      "sha256": "c9f2203a1138b118f1e7422bf82992b9ceee7271ce3ef0a6ee21b8b3457c61cc"
+    },
+    {
+      "path": "outputs/03_claude/CL03_대시보드_배포답안.pdf",
+      "sha256": "cd7a9342bbc90cbcf953905995fdfecd405e588c9d8e196d0f1bb06750785054"
+    },
+    {
+      "path": "outputs/04_gemini/GE01D_안내문_최종_GoogleDocs.pdf",
+      "sha256": "f7d9a0065198ee07449fc6f52fe87dc1579cf7479bf9332970aa3dd8bfcb9f69"
+    },
+    {
+      "path": "outputs/04_gemini/GE01I_안내이미지_1600x900_제작자보완.png",
+      "sha256": "eda4a8742dccd02e0f0dccf460822b48b68e780ed0f2922674b50cc056dc4e06"
+    },
+    {
+      "path": "outputs/04_gemini/GE02A_두진행자_팟캐스트_실제생성.mp3",
+      "sha256": "589c60fce7210e2022160e1647d5a4232183cc2de6f93b0c8b3eb15e7062252d"
+    },
+    {
+      "path": "outputs/04_gemini/GE02_노트북_배포답안.pdf",
+      "sha256": "35da2f47e1c72b3eda96c26cbff714536c825a088ccdb2a40ef31ab5757dca8c"
+    },
+    {
+      "path": "outputs/04_gemini/GE03_민원6건_배포답안.pdf",
+      "sha256": "47e538bb6a85c2202d39d32046da6ccf3d467fb0c2763e3f5f434e7cf469fbeb"
+    },
+    {
+      "path": "outputs/04_gemini/GE04C_계약차트_오프라인_제작자보완.html",
+      "sha256": "7b98dcacc1ac8847629a87c27c582ef1293669e47416327f0a01c406154e12cd"
+    },
+    {
+      "path": "outputs/04_gemini/GE04_계약300건_통합완성본_제작자보완.xlsx",
+      "sha256": "5e8db9b05e17928de35bd4a40becb6723c4523e35726c8ec77fe59a4b9d5bd5f"
+    },
+    {
+      "path": "prompts/CG01C_Canvas편집.txt",
+      "sha256": "1222364d69caf91964d4286ccb5d3f512f6cbf89713698a29a30f7fef286e658"
+    },
+    {
+      "path": "prompts/CG01R_보고서검산수정.txt",
+      "sha256": "982600729c74c0a7abbda8ed330be0dfa5a06145a9d46184889a6ec5fe903102"
+    },
+    {
+      "path": "prompts/CG01_보고서초안.txt",
+      "sha256": "9307930d657d513cd4d71980dcc6c63d7131cf31009964fde94fb76d3d77487d"
+    },
+    {
+      "path": "prompts/CG02T_플러그인재사용.txt",
+      "sha256": "c231c5fff4e02b9a9543bb368a22be6abb3562fe9d64763c68d58bee7932d6a4"
+    },
+    {
+      "path": "prompts/CG02_보고서플러그인생성.txt",
+      "sha256": "7d9868011bc3baee85aa0304d7756d26731d68b893088899ba039e2a49d82d25"
+    },
+    {
+      "path": "prompts/CG03R_ALIO근거수정.txt",
+      "sha256": "971c693f05ead550b5d0084f47f77be4ae955e413a867cc3c37cf800afce6371"
+    },
+    {
+      "path": "prompts/CG03_ALIO비교.txt",
+      "sha256": "689c6eec0dd8298ea784c54cc921ffc0433000a28120603931b9c22a6979a82f"
+    },
+    {
+      "path": "prompts/CL01R_문서근거수정.txt",
+      "sha256": "4e41948b6e3c1ef6ae46c26123dd1fa9f560de00cacd3fbf44bb002dfbcb1eb6"
+    },
+    {
+      "path": "prompts/CL01_문서통합검토.txt",
+      "sha256": "29b80121c7a6721c6337fa14ff3a2ecf08392d93bdc204ebe59338f9d77d2718"
+    },
+    {
+      "path": "prompts/CL02I_Projects지침.txt",
+      "sha256": "6ebd0e7097b0d11d2058152551cbf9d0407a13c10ec4f6d019493298ebd20122"
+    },
+    {
+      "path": "prompts/CL02P_공개입찰적용범위.txt",
+      "sha256": "91100ba4c01ea4f43aabea46e2d53c1afb96ef5db90c1c31eed2a04680c09ae6"
+    },
+    {
+      "path": "prompts/CL02_Projects근거질문.txt",
+      "sha256": "c2f8f107ab27515aebc4d202a761189b8a684e8b1f06ab16c61167b1c6907a62"
+    },
+    {
+      "path": "prompts/CL03R_Artifact필터수정.txt",
+      "sha256": "10fe85a0dcf88f5e8513eb25773637b8b6712a94e2c99541cff07d9083dc9317"
+    },
+    {
+      "path": "prompts/CL03_진행현황Artifact.txt",
+      "sha256": "726595f3f39b9001f2d36ee1631dd8f0a1f1958d436198cce8d9ec1e6c060e8a"
+    },
+    {
+      "path": "prompts/GE01DR_안내문1쪽수정.txt",
+      "sha256": "0c22566c6cca4c0cf4152a2e68e6c0e02b7d18b9d97f9bfdd22d65058f28cf04"
+    },
+    {
+      "path": "prompts/GE01D_고객안내문.txt",
+      "sha256": "f8e872d409bb868287430a523e150af785048ea55ab9d2cb97cdd6b9a829d833"
+    },
+    {
+      "path": "prompts/GE01IR_이미지표시보완.txt",
+      "sha256": "f4f7c4af2fdbe83416841aef1b48059c3fb7d3d2624b3c1480f067fe27e93177"
+    },
+    {
+      "path": "prompts/GE01I_고객안내이미지.txt",
+      "sha256": "140c8a71015d80452694a4e9ab2574841a088f1f316e6fcc23f2c3596205243f"
+    },
+    {
+      "path": "prompts/GE01R_콘텐츠수정.txt",
+      "sha256": "92830769c078381a0efd15ad6651f1c1e4daa4a25deff0ada9259df15e9ff6a6"
+    },
+    {
+      "path": "prompts/GE01SR_슬라이드3묶음수정.txt",
+      "sha256": "1f0c8844a7b8b909948148780222ff8bb1f14b3401ebada247f8f6abbadb02e9"
+    },
+    {
+      "path": "prompts/GE01S_고객안내슬라이드.txt",
+      "sha256": "f1786918b99ad753e54e801ca67d6928e17179fe82ad7cd3bde7d62c394fd917"
+    },
+    {
+      "path": "prompts/GE02A_두진행자_팟캐스트.txt",
+      "sha256": "269009602acb21c89dacc7e970c800dadd6f9cdd6d1025e153b21e12e1514667"
+    },
+    {
+      "path": "prompts/GE02R_노트북인용수정.txt",
+      "sha256": "15204dfe3656efb5ef4ee08ea8f2a13c34cb3be322849900403582a183a9a59b"
+    },
+    {
+      "path": "prompts/GE02_노트북출처검토.txt",
+      "sha256": "ccd620129eaea2c229dbab2fe75b6a1d6c3722edb15aea3de91b1122fa8aef2e"
+    },
+    {
+      "path": "prompts/GE03I_고객답변스킬지침.txt",
+      "sha256": "359c669634347bef9f5b8a181bb5bc3236162dbbe3f11daa763587b88ef0e050"
+    },
+    {
+      "path": "prompts/GE03R_고객답변수정.txt",
+      "sha256": "097a87db029e111a40728c774fd67b2045cdd9b18347b9c9e834b48a390ad506"
+    },
+    {
+      "path": "prompts/GE03T_고객답변스킬테스트.txt",
+      "sha256": "1e1f09844ccdb7dc6e2a68b77f37fc04afe28293985328adb12922b278eb97fe"
+    },
+    {
+      "path": "prompts/GE03_고객답변스킬생성.txt",
+      "sha256": "e5f9519c7f5dd4b3580b93ede40c8c62ab35ec20c0b769186185f55039e59747"
+    },
+    {
+      "path": "prompts/GE04C_계약차트.txt",
+      "sha256": "b28a290b6b7e81fd6f71f9b4cea81e08715431795d218f6799e9bd93196e0abf"
+    },
+    {
+      "path": "prompts/GE04R_계약집계수정.txt",
+      "sha256": "fe2f879879f460f20aac65854afef9eed65ff5f799c5bf979dcc65776dd8c7ae"
+    },
+    {
+      "path": "prompts/GE04_계약집계.txt",
+      "sha256": "9d31fff6715fdafb303c16ea7c3da79d9c57d824b7721166c8d7dcaa1db144ec"
+    },
+    {
+      "path": "배포/노션_모듈준비물/준비물_02_chatgpt.zip",
+      "sha256": "f7f1e6d4358daec81fe4736902c70a583955b6ca761b08c272ed26938ce01c29"
+    },
+    {
+      "path": "배포/노션_모듈준비물/준비물_03_claude.zip",
+      "sha256": "8682b1a7e82b3e73f0e2f5d8556e6cf69d920241a3fe43850928c982b61ff0f2"
+    },
+    {
+      "path": "배포/노션_모듈준비물/준비물_04_gemini.zip",
+      "sha256": "90f9b9dea7ceec34aa3f9ac04039a97449f1b3efe42dba9b268758daab537293"
+    }
+  ],
+  "page_count": 7,
+  "approved_image_count": 65,
+  "raw_captures_published": false
+}

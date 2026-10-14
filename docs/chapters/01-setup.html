@@ -1,0 +1,145 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>계정과 Windows 앱 · 한전 AI 업무활용 실습교재</title><meta name="description" content="Windows의 ChatGPT·Claude 앱과 Gemini 웹으로 진행하는 6시간 AI 업무활용 실습교재. 실습 자료와 요청문, 실제 화면 캡처를 제공합니다."><link rel="stylesheet" href="../assets/site.css"><script src="../assets/site.js" defer></script></head><body class="chapter" data-root="../"><a class="skip" href="#main">본문으로 이동</a><aside class="sidebar" aria-label="교재 탐색"><div class="eyebrow">AI WORKBOOK</div><a class="brand" href="../index.html">한전 AI 업무활용<br>실습교재</a><div class="course">Windows · ChatGPT · Claude · Gemini<br>6시간 실습 과정</div><div class="search-wrap"><label class="sr-only" for="search">교재 검색</label><input id="search" type="search" placeholder="교재에서 검색" autocomplete="off"><div class="search-results" aria-live="polite"></div></div><nav class="nav" aria-label="장별 목차"><a href="../index.html"><span class="num">↗</span>시작하기</a><a href="../chapters/00-basics.html"><span class="num">00</span>기본 개념</a><a href="../chapters/01-setup.html" aria-current="page"><span class="num">01</span>계정과 Windows 앱</a><a href="../chapters/02-chatgpt.html"><span class="num">02</span>ChatGPT 업무 활용</a><a href="../chapters/03-claude.html"><span class="num">03</span>Claude 업무 활용</a><a href="../chapters/04-gemini.html"><span class="num">04</span>Gemini 업무 활용</a><a href="../chapters/05-apply.html"><span class="num">05</span>내 업무 적용·정리</a></nav><div class="sidebar-footer"><a href="https://axia-llm.dreamitbiz.com" target="_blank" rel="noopener">LLM 실습 플랫폼 ↗</a><a href="https://jangka44.notion.site/AI-3f6d4cdd4f478194a8dbda7adef5ccbd" target="_blank" rel="noopener">노션 교재 ↗</a></div></aside><div class="workspace"><header class="topbar"><button class="menu-button" type="button" aria-expanded="false">목차</button><span>계정과 Windows 앱</span><button class="print-button" type="button">인쇄</button></header><main id="main"><article><h1 id="1-windows">1. 실습 시작 준비: 계정과 Windows 앱</h1><details class="toc"><summary>이 장의 목차</summary><div class="toc">
+<ul>
+<li><a href="#1">1. 앱을 열고 파일 준비하기</a></li>
+<li><a href="#claude-desktop-windows-mcp">사전준비: Claude Desktop에 Windows MCP 연결하기</a></li>
+<li><a href="#claude">사전준비: 임세범 한글 스킬을 Claude에 추가하기</a></li>
+<li><a href="#2">2. 처음 준비하는 경우: 필요한 것만 진행하기</a></li>
+</ul>
+</div>
+</details>
+<p><strong>목표:</strong> 세 도구의 입력창을 열고 실습 파일을 준비합니다. 이 수업은 <strong>기존 Google 계정이 있는 학생</strong>을 전제로 합니다.</p>
+<p><strong>필수 파일:</strong> 이번 실습의 Excel과 문서 PDF 한 버전입니다. 파일은 각 실습의 ‘준비물’에서 받습니다.</p>
+<p><strong>지금 할 일:</strong> 이미 설치된 ChatGPT·Claude 앱과 Chrome의 Gemini 웹을 여세요. 계정과 앱이 준비돼 있으면 아래 ‘1. 앱을 열고 파일 준비하기’부터 시작합니다. 아직 없다면 뒤의 ‘처음 준비하는 경우’를 수업 전에 진행합니다.</p>
+<h2 id="1">1. 앱을 열고 파일 준비하기</h2>
+<ol>
+<li>Windows <strong>시작 메뉴 → ChatGPT</strong>를 엽니다. 로그인하고 ChatGPT/Codex 선택이 보이면 <strong>ChatGPT</strong>를 선택합니다. 새 대화 입력창을 확인합니다.</li>
+<li>Windows <strong>시작 메뉴 → Claude</strong>를 엽니다. 로그인하고 <strong>Claude 대화 화면</strong>에서 새 대화를 엽니다.</li>
+<li>Chrome에서 <a href="https://gemini.google.com/">Gemini 웹</a>을 엽니다. Google 계정으로 로그인하고 새 질문 입력창을 확인합니다.</li>
+</ol>
+<figure><img alt="Gemini 웹의 새 질문 입력창을 확인합니다." src="../captures/annotated/00_setup/SU06_gemini_signed_in.png" /><figcaption>Gemini 웹의 새 질문 입력창을 확인합니다.</figcaption></figure>
+<p>빨간 테두리의 입력창을 사용합니다. 이 수업에서는 Gemini를 웹으로 씁니다.</p>
+<ol>
+<li>교육 준비물 폴더에서 이번 실습의 Excel과 문서 PDF를 찾습니다.</li>
+<li>실습 결과를 저장할 폴더를 만듭니다.</li>
+</ol>
+<h3 id="_1">준비물은 같은 자료 한 버전만 받기</h3>
+<p>같은 자료가 <strong>Word(DOCX)·한글(HWPX)·PDF</strong>로 제공되면 필요한 형식 <strong>하나만</strong> 받습니다. AI에 첨부할 문서는 <strong>PDF를 권장</strong>합니다. 직접 고칠 때는 Word나 한글을 선택합니다. 같은 내용의 세 파일을 동시에 첨부하지 않습니다.</p>
+<p><strong>Excel은 별도 준비물입니다.</strong> 해당 실습의 Excel과 필요한 문서 PDF를 함께 첨부합니다. 파일명·시트·내용이 맞는지 확인합니다.</p>
+<h3 id="_2">메뉴가 안 보이면 이렇게 진행하기</h3>
+<p>계정에 따라 메뉴가 다를 수 있습니다. 사용할 기능이 보이는지 확인하고, 없다면 강사에게 알린 뒤 아래 행동으로 이어갑니다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>필요한 기능</th>
+<th>메뉴가 없거나 실패하면</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ChatGPT·Claude 앱</td>
+<td>같은 서비스 계정으로 <a href="https://chatgpt.com/">ChatGPT 웹</a>·<a href="https://claude.ai/">Claude 웹</a>을 열고 같은 저장 대화에서 이어갑니다.</td>
+</tr>
+<tr>
+<td>보고서 플러그인</td>
+<td>실습 지침을 새 대화에 자료와 함께 붙여넣습니다.</td>
+</tr>
+<tr>
+<td>Claude Projects</td>
+<td>한 대화에 검토 지침과 PDF를 함께 넣습니다.</td>
+</tr>
+<tr>
+<td>Claude Artifact</td>
+<td>강사에게 알리고 준비물 CSV를 Excel에서 필터해 같은 수치를 확인합니다.</td>
+</tr>
+<tr>
+<td>Gemini 노트북</td>
+<td>제공되는 Gemini Notebook 화면을 사용합니다. 없으면 PDF를 첨부한 일반 대화에서 근거를 대조합니다.</td>
+</tr>
+<tr>
+<td>Gemini 스킬</td>
+<td>제공되는 Gem을 쓰거나 일반 대화에 같은 지침·FAQ·사례를 넣습니다.</td>
+</tr>
+<tr>
+<td>파일 읽기</td>
+<td>파일명을 확인해 한 번 다시 첨부합니다. 계속 안 되면 필요한 표·문단 한 건을 붙여넣습니다.</td>
+</tr>
+<tr>
+<td>편집·내보내기</td>
+<td>본문을 먼저 복사해 저장합니다. 제공된 실습 예시와 원자료를 비교하고 수정할 부분을 찾습니다.</td>
+</tr>
+</tbody>
+</table></div>
+<p>앱이 멈췄다면 요청을 중복 전송하지 않습니다. <strong>같은 계정 웹 → 같은 저장 대화 → 마지막 검토·수정 단계</strong>로 이어갑니다. 결과가 없으면 자료와 요청문을 다시 넣습니다. 기다림이 길어지면 강사가 제공하는 예시에서 원자료 대조부터 진행합니다.</p>
+<p><strong>완료 확인:</strong> ChatGPT·Claude·Gemini의 입력창을 열고 이번 실습 파일을 찾았으면 <a href="../chapters/02-chatgpt.html">ChatGPT 보고서 실습</a>으로 이동하세요.</p>
+<h2 id="claude-desktop-windows-mcp">사전준비: Claude Desktop에 Windows MCP 연결하기</h2>
+<p>PC에 프로그램을 설치하고 설정 파일을 편집할 수 있는 에이전트에서 아래 한 줄을 요청합니다. 이미 연결돼 있으면 설치 요청은 건너뜁니다.</p>
+<pre><code class="language-text">https://github.com/CursorTouch/Windows-MCP 를 Claude Desktop용으로 설치하고, 기존 MCP 설정을 유지하면서 서버 등록까지 해 주세요.
+</code></pre>
+<ol>
+<li>에이전트가 설치와 <code>claude_desktop_config.json</code> 등록을 마치면 <strong>Claude Desktop을 완전히 종료한 뒤 다시 엽니다.</strong></li>
+<li><strong>설정 → 개발자</strong>에서 <code>windows-mcp</code>가 <strong>실행 중</strong>인지 확인합니다. 새 대화에서 “Windows MCP로 열린 창 이름만 확인해 줘. 클릭하거나 입력하지 마.”라고 요청해 실제 도구 호출까지 확인합니다.</li>
+</ol>
+<figure><img alt="Claude Desktop 개발자 화면에서 windows-mcp가 실행 중인지 확인합니다." src="../captures/annotated/00_setup/SU07_windows_mcp_running.png" /><figcaption>Claude Desktop 개발자 화면에서 windows-mcp가 실행 중인지 확인합니다.</figcaption></figure>
+<p>설치 요청을 보낸 것만으로 완료된 것은 아닙니다. 서버 등록과 연결 확인까지 필요합니다. 이 안내는 Claude Desktop용입니다. <a href="https://github.com/CursorTouch/Windows-MCP">제공자 안내</a></p>
+<h2 id="claude">사전준비: 임세범 한글 스킬을 Claude에 추가하기</h2>
+<p><strong>스킬 이름은 hwpx입니다.</strong> 한글 HWPX 문서를 만들고 편집·검증합니다. 이미 추가했다면 설치 요청은 건너뜁니다. 파일을 내려받을 수 있는 에이전트에 아래 한 줄을 요청합니다.</p>
+<pre><code class="language-text">https://github.com/imsebeom/hwpx-skills 의 hwpx-web-skill.zip을 내려받아 Claude 한글 스킬 설치를 준비해 주세요.
+</code></pre>
+<ol>
+<li>Claude Desktop 또는 <a href="https://claude.ai/">Claude 웹</a>에서 <strong>맞춤 설정 → 스킬(Customize → Skills) → + → 스킬 만들기 → 스킬 업로드</strong>를 엽니다. <code>hwpx-web-skill.zip</code>을 압축을 풀지 않은 채 업로드하고 <strong>hwpx</strong> 사용을 켭니다. <a href="https://github.com/imsebeom/hwpx-skills/blob/main/hwpx-web-skill.zip">ZIP 다운로드 페이지</a></li>
+<li>새 대화에서 “hwpx 스킬로 제목이 ‘AI 업무활용 교육 안내’인 HWPX 파일을 만들고 검증해 줘.”라고 요청합니다. 내려받은 <code>.hwpx</code> 파일을 <strong>폴라리스</strong> 또는 한글 프로그램으로 열어 제목과 표시 상태를 확인합니다.</li>
+</ol>
+<p><strong>프롬프트만으로 Claude 웹·Desktop에 스킬이 설치되는 것은 아닙니다. ZIP 업로드가 필요합니다.</strong> 스킬 메뉴가 보이지 않으면 같은 계정의 웹에서 확인하고, <strong>설정 → 기능</strong>의 <strong>코드 실행 및 파일 생성</strong>과 조직의 스킬 사용 허용 여부를 확인합니다. <a href="https://support.claude.com/en/articles/12512180-use-skills-in-claude">Claude 공식 스킬 안내</a></p>
+<p>이 안내는 <code>.hwpx</code>용입니다. <a href="https://github.com/imsebeom/hwpx">imsebeom/hwpx</a>는 Claude Code용 별도 설치 안내이며, 여기서는 <a href="https://github.com/imsebeom/hwpx-skills">hwpx-skills</a>의 웹용 ZIP을 사용합니다.</p>
+<h2 id="2">2. 처음 준비하는 경우: 필요한 것만 진행하기</h2>
+<p><strong>수업 전 30~45분</strong>을 확보합니다. 이미 있는 계정·앱은 그대로 사용합니다.</p>
+<p>준비 순서는 <strong>Chrome → 기존 Google 계정으로 Gemini 웹 로그인 → 같은 Google 계정으로 ChatGPT 가입·Windows 앱 설치 → Claude 가입·Windows 앱 설치</strong>입니다. 같은 Google 계정으로 로그인해도 ChatGPT와 Claude는 각각 별도의 서비스 계정입니다.</p>
+<p>아래는 처음 준비할 때 참고하는 안내입니다. 화면이 다르면 현재 서비스의 안내를 따릅니다.</p>
+<h3 id="chrome">Chrome이 없다면</h3>
+<ol>
+<li><a href="https://www.google.com/chrome/">Chrome 공식 다운로드</a>를 엽니다.</li>
+<li>Windows용 다운로드를 선택합니다.</li>
+</ol>
+<figure><img alt="Chrome 공식 페이지의 Windows용 다운로드 버튼." src="../captures/annotated/00_setup/SU05_chrome_download.png" /><figcaption>Chrome 공식 페이지의 Windows용 다운로드 버튼.</figcaption></figure>
+<ol>
+<li>받은 설치 파일을 실행합니다.</li>
+<li>설치 안내를 마친 뒤 Chrome을 엽니다.</li>
+</ol>
+<p><strong>완료 확인:</strong> Chrome 창이 열리면 다음 단계로 갑니다. 이미 Chrome이 있으면 다시 설치하지 않습니다. 기관 PC에서 설치가 제한되면 담당자에게 요청합니다. <a href="https://support.google.com/chrome/answer/95346?hl=ko">공식 설치 안내</a></p>
+<h3 id="gemini">Gemini 웹에 로그인하기</h3>
+<ol>
+<li>Chrome에서 <a href="https://gemini.google.com/">Gemini 웹</a>을 엽니다.</li>
+<li><strong>로그인</strong>을 선택합니다.</li>
+<li>기존 Google 계정으로 로그인합니다.</li>
+</ol>
+<p><strong>완료 확인:</strong> 새 질문 입력창이 보이면 준비됐습니다. 위의 Gemini 입력창 캡처를 참고하세요. 이 과정에서는 별도 설치 없이 웹을 사용합니다. 기관 계정에서 접속이 제한되면 강사에게 알립니다. <a href="https://support.google.com/gemini/answer/13278668?hl=ko">공식 로그인 안내</a></p>
+<h3 id="chatgpt">ChatGPT 계정·앱이 없다면</h3>
+<ol>
+<li>Chrome에서 <a href="https://chatgpt.com/">ChatGPT</a>를 엽니다.</li>
+<li>가입 화면에서 Google 로그인이 표시되면 같은 Google 계정을 선택합니다. 기존 계정은 처음 가입한 방식으로 로그인합니다.</li>
+<li>본인이 화면의 가입·인증 안내를 마칩니다.</li>
+<li><a href="https://chatgpt.com/download/">ChatGPT 공식 다운로드</a>에서 Windows용 다운로드를 선택합니다.</li>
+</ol>
+<figure><img alt="ChatGPT 공식 다운로드에서 Windows용 다운로드를 선택합니다." src="../captures/annotated/00_setup/SU03_chatgpt_download.png" /><figcaption>ChatGPT 공식 다운로드에서 Windows용 다운로드를 선택합니다.</figcaption></figure>
+<ol>
+<li>공식 설치 안내에 따라 설치를 마칩니다.</li>
+<li>Windows 시작 메뉴에서 ChatGPT를 엽니다.</li>
+<li>같은 계정으로 로그인합니다.</li>
+<li>ChatGPT/Codex 선택이 보이면 <strong>ChatGPT</strong>를 선택합니다.</li>
+</ol>
+<p><strong>완료 확인:</strong> 새 대화 입력창이 보이면 준비됐습니다. <a href="https://learn.chatgpt.com/docs/windows/windows-app">Windows 공식 안내</a>·<a href="https://learn.chatgpt.com/docs/quickstart?setup=app">공식 빠른 시작</a></p>
+<h3 id="claude_1">Claude 계정·앱이 없다면</h3>
+<ol>
+<li>Chrome에서 <a href="https://claude.ai/">Claude</a>를 엽니다.</li>
+<li><strong>Continue with Google</strong>에 해당하는 항목을 선택합니다.</li>
+<li>같은 Google 계정으로 본인이 화면의 가입·인증을 마칩니다. 기존 계정은 로그인합니다.</li>
+<li><a href="https://claude.com/download">Claude 공식 다운로드</a>에서 Windows용 다운로드를 선택합니다.</li>
+</ol>
+<figure><img alt="Claude 공식 다운로드에서 Windows용 다운로드를 선택합니다." src="../captures/annotated/00_setup/SU04_claude_download.png" /><figcaption>Claude 공식 다운로드에서 Windows용 다운로드를 선택합니다.</figcaption></figure>
+<ol>
+<li>받은 파일로 설치를 마칩니다. PC가 ARM64 방식이면 화면의 해당 버전을 확인합니다.</li>
+<li>Windows 시작 메뉴에서 Claude를 엽니다.</li>
+<li>같은 계정으로 로그인합니다.</li>
+<li><strong>Claude 대화 화면</strong>을 엽니다.</li>
+</ol>
+<p><strong>완료 확인:</strong> 새 입력창이 보이면 준비됐습니다. <a href="https://support.claude.com/en/articles/13189465-log-in-to-your-claude-account">공식 로그인 안내</a>·<a href="https://support.claude.com/en/articles/10065433-install-claude-desktop">Desktop 공식 설치 안내</a></p></article><nav class="page-nav" aria-label="이전·다음 장"><a href="../chapters/00-basics.html">← 기본 개념</a><a href="../chapters/02-chatgpt.html">ChatGPT 업무 활용 →</a></nav><footer class="footer">한전 AI 업무활용 실습교재 · 마크다운 원본 기반<br>필요한 자료는 각 실습에서 내려받습니다.</footer></main></div></body></html>

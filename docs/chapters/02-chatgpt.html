@@ -1,0 +1,420 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ChatGPT 업무 활용 · 한전 AI 업무활용 실습교재</title><meta name="description" content="Windows의 ChatGPT·Claude 앱과 Gemini 웹으로 진행하는 6시간 AI 업무활용 실습교재. 실습 자료와 요청문, 실제 화면 캡처를 제공합니다."><link rel="stylesheet" href="../assets/site.css"><script src="../assets/site.js" defer></script></head><body class="chapter" data-root="../"><a class="skip" href="#main">본문으로 이동</a><aside class="sidebar" aria-label="교재 탐색"><div class="eyebrow">AI WORKBOOK</div><a class="brand" href="../index.html">한전 AI 업무활용<br>실습교재</a><div class="course">Windows · ChatGPT · Claude · Gemini<br>6시간 실습 과정</div><div class="search-wrap"><label class="sr-only" for="search">교재 검색</label><input id="search" type="search" placeholder="교재에서 검색" autocomplete="off"><div class="search-results" aria-live="polite"></div></div><nav class="nav" aria-label="장별 목차"><a href="../index.html"><span class="num">↗</span>시작하기</a><a href="../chapters/00-basics.html"><span class="num">00</span>기본 개념</a><a href="../chapters/01-setup.html"><span class="num">01</span>계정과 Windows 앱</a><a href="../chapters/02-chatgpt.html" aria-current="page"><span class="num">02</span>ChatGPT 업무 활용</a><a href="../chapters/03-claude.html"><span class="num">03</span>Claude 업무 활용</a><a href="../chapters/04-gemini.html"><span class="num">04</span>Gemini 업무 활용</a><a href="../chapters/05-apply.html"><span class="num">05</span>내 업무 적용·정리</a></nav><div class="sidebar-footer"><a href="https://axia-llm.dreamitbiz.com" target="_blank" rel="noopener">LLM 실습 플랫폼 ↗</a><a href="https://jangka44.notion.site/AI-3f6d4cdd4f478194a8dbda7adef5ccbd" target="_blank" rel="noopener">노션 교재 ↗</a></div></aside><div class="workspace"><header class="topbar"><button class="menu-button" type="button" aria-expanded="false">목차</button><span>ChatGPT 업무 활용</span><button class="print-button" type="button">인쇄</button></header><main id="main"><article><h1 id="2-chatgpt">2. ChatGPT 업무 활용</h1><details class="toc"><summary>이 장의 목차</summary><div class="toc">
+<ul>
+<li><a href="#cg01">CG01. 연간 실적 보고서 작성과 편집</a></li>
+<li><a href="#cg02">CG02. 보고서 작성 절차를 플러그인으로 재사용</a></li>
+<li><a href="#cg03-alio">CG03. ALIO 공개자료로 기관 비교표 만들기</a></li>
+</ul>
+</div>
+</details>
+<p><strong>90분.</strong> 실적 보고서 작성 → 보고서 작성 절차 재사용 → ALIO 기관 비교 순서로 진행합니다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>시간</th>
+<th>실습</th>
+<th>만들 결과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0~40분</td>
+<td>CG01 보고서 작성·편집</td>
+<td>검산한 보고서</td>
+</tr>
+<tr>
+<td>40~65분</td>
+<td>CG02 플러그인 재사용</td>
+<td>새 대화에서도 같은 기준으로 작성한 초안</td>
+</tr>
+<tr>
+<td>65~90분</td>
+<td>CG03 ALIO 비교</td>
+<td>같은 기준의 비교표</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>파일 선택:</strong> 문서의 Word·PDF·HWPX는 같은 내용이므로 사용할 형식 <strong>하나만</strong> 고릅니다. 아래 실습의 AI 첨부에는 PDF를 권장하며, Excel은 그대로 사용합니다. 캡처는 실제 실습 화면입니다.</p>
+<p>ChatGPT 앱에서 <strong>ChatGPT</strong>를 선택합니다. Chat은 대화, Work는 파일 작업에 쓰며, 계정에 보이는 메뉴를 사용합니다. <a href="https://learn.chatgpt.com/docs/quickstart?setup=app">공식 시작 안내</a></p>
+<h2 id="cg01">CG01. 연간 실적 보고서 작성과 편집</h2>
+<p><strong>목표:</strong> 2025년 실적을 계산해 A4 2쪽 안팎의 보고서 초안을 만들고 수정합니다.</p>
+<h3 id="_1">지금 준비할 파일</h3>
+<p><strong>첨부 2개:</strong> Excel 1개 + 입력 메모 PDF 1개입니다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>파일</th>
+<th>쓰는 이유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../materials/02_chatgpt/월별사업실적_가상.xlsx">월별 실적 Excel</a></td>
+<td>2025년 계획·실적·예산·설문을 계산</td>
+</tr>
+<tr>
+<td><a href="../materials/02_chatgpt/보고서작성_입력메모_가상.pdf">보고서 작성 메모 PDF</a></td>
+<td>보고서 목적과 확인할 사항 확인</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_2">바로 할 일</h3>
+<ol>
+<li><strong>새 대화</strong>를 엽니다.</li>
+<li>입력창의 <strong>파일 추가</strong>에서 위 두 파일을 한 번씩 첨부합니다.</li>
+<li>파일명이 <strong>2개</strong> 보이고 업로드가 끝났는지 확인합니다.</li>
+<li>아래 요청문을 복사해 전송합니다.</li>
+<li>답변의 파일·시트·기간·단위를 확인합니다.</li>
+</ol>
+<p>요청문 원본: <a href="../prompts/CG01_보고서초안.txt">CG01</a></p>
+<pre><code class="language-text">2025년 1~12월 업무실적 보고서 초안을 작성해 주세요.
+1. 먼저 파일·시트·열·행 수·기간·단위를 확인해 주세요.
+2. 월별원자료에서 업무별 연간 계획량·실적량·예산·집행액·설문응답·만족응답 합계를 계산해 주세요.
+달성률·집행률·만족응답률은 각각 합계의 비율로 계산하고 소수점 첫째 자리로 표시해 주세요.
+3. 점검기록 정비·계획작업 고객안내·직원 업무교육은 단위와 대상이 다르므로
+통합 처리 건수나 전체 달성률을 만들지 말아 주세요.
+교육은 연인원입니다.
+4. A4 2쪽 안팎의 초안을
+'요약 /
+업무별 실적표 /
+확인된 사실 /
+추가 확인이 필요한 해석 /
+개선 제안 /
+검토자 확인사항' 순으로 써 주세요.
+5. 수치 근거는 파일·시트·열 또는 행 범위와 계산식으로 표시해 주세요.
+2026년 용역 조건은 2025년 실적에 합산하지 말고,
+제공되지 않은 전년 대비 증감·비용절감·고유 고객 수·인과관계를 만들지 말아 주세요.
+</code></pre>
+<h3 id="_3">숫자와 해석을 확인하세요</h3>
+<p>Excel의 <code>월별원자료</code>에서 제목·안내를 제외한 데이터는 <strong>36행</strong>입니다. <code>사업집계</code>와 사업별로 대조합니다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>확인할 것</th>
+<th>확인 방법</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기간·단위</td>
+<td>2025년 1~12월, 금액 원, 사업별 건·연인원</td>
+</tr>
+<tr>
+<td>달성률</td>
+<td>연실적 합계 ÷ 연계획 합계 × 100</td>
+</tr>
+<tr>
+<td>집행률</td>
+<td>연집행 합계 ÷ 연예산 합계 × 100</td>
+</tr>
+<tr>
+<td>만족응답률</td>
+<td>만족응답 합계 ÷ 설문응답 합계 × 100</td>
+</tr>
+<tr>
+<td>인원·해석</td>
+<td>연인원을 고유 직원 수로 바꾸거나 의견을 확정된 효과로 쓰지 않았는지</td>
+</tr>
+<tr>
+<td>근거</td>
+<td>숫자에 파일·시트·범위·계산식이 붙었는지</td>
+</tr>
+</tbody>
+</table></div>
+<p>월별 비율의 단순 평균을 내지 않습니다. 세 사업의 대상과 단위가 다르므로 전체 달성률로 합치지 않습니다.</p>
+<figure><img alt="보고서의 업무별 실적표를 원자료와 대조합니다." src="../captures/annotated/02_chatgpt/CG01_01_result_table.png" /><figcaption>보고서의 업무별 실적표를 원자료와 대조합니다.</figcaption></figure>
+<p>값이나 해석이 다르면 같은 대화에서 다음 요청을 보냅니다.</p>
+<p>요청문 원본: <a href="../prompts/CG01R_보고서검산수정.txt">CG01R</a></p>
+<pre><code class="language-text">방금 보고서와 첨부 원자료를 다시 대조해 주세요.
+업무별 달성률은 연실적량 합계 ÷ 연계획량 합계,
+집행률은 연집행 합계 ÷ 연예산 합계,
+만족응답률은 만족응답 합계 ÷ 설문응답 합계로
+다시 계산하세요.
+혼합 단위 전체 실적·달성률, 고유 직원 수, 미제공 전년 대비·비용 절감·인과관계가 있다면 삭제하세요.
+수정한 표와 항목별 수정 이유, 파일·시트·열 또는 행 범위 근거를 제시하세요.
+</code></pre>
+<h3 id="_4">보고서를 편집하고 저장하세요</h3>
+<ol>
+<li>아래 편집 요청문을 전송합니다.</li>
+<li>문서 카드의 <strong>확대</strong> 버튼으로 편집 화면을 엽니다.</li>
+<li>제목·요약·표·확인사항을 차례로 다듬습니다.</li>
+<li>숫자·단위·출처가 남아 있는지 확인합니다.</li>
+<li><strong>내려받기</strong>가 제공되면 파일을 저장합니다.</li>
+<li>저장한 파일을 다시 엽니다. 텍스트만 나오면 본문을 복사해 문서 프로그램에 저장합니다.</li>
+</ol>
+<p>요청문 원본: <a href="../prompts/CG01C_Canvas편집.txt">CG01C</a></p>
+<pre><code class="language-text">확인한 보고서 초안을 Canvas에서 편집할 수 있도록 열어 주세요.
+제목은 '2025년 업무 개선 시범사업 실적 보고'로 하세요.
+요약은 3문장, 본문은 A4 2쪽 안팎으로 정리하고
+업무별 실적표와 계산식·출처는 유지하세요.
+확인된 사실과 담당자 확인이 필요한 해석을 별도 항목으로 나누세요.
+제공된 숫자는 바꾸지 마세요.
+이 환경에서 Canvas를 열 수 없다면 불가능한 이유를 설명하고,
+편집 가능한 문서 파일로 제공할 수 있는 범위를 알려 주세요.
+</code></pre>
+<figure><img alt="문서 카드의 확대 버튼으로 편집 화면을 엽니다." src="../captures/annotated/02_chatgpt/CG01_03_editor_open.png" /><figcaption>문서 카드의 확대 버튼으로 편집 화면을 엽니다.</figcaption></figure>
+<p>기존 Canvas가 없으면 계정에 제공되는 문서 편집 화면을 사용합니다. 대화에 텍스트가 나온 것과 편집 화면이 열린 것은 구분합니다.</p>
+<h3 id="_5">성공 확인</h3>
+<p>파일 2개를 읽고, 세 사업의 합계·비율·단위를 분리한 보고서를 저장했으면 완료입니다. 숫자의 근거 범위와 확인할 사항도 남아 있어야 합니다.</p>
+<details>
+<summary>선택 참고: 저장이 막혔을 때</summary>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>상황</th>
+<th>다음 행동</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Excel을 못 읽음</td>
+<td>파일명을 확인해 다시 첨부. 필요하면 같은 자료의 CSV 사용</td>
+</tr>
+<tr>
+<td>계산이 다름</td>
+<td>사업·기간·분모와 합산 범위를 지정해 다시 요청</td>
+</tr>
+<tr>
+<td>편집 화면이 없음</td>
+<td>대화의 본문을 복사해 PC 문서 프로그램에서 편집</td>
+</tr>
+<tr>
+<td>파일 다운로드 실패</td>
+<td>본문을 먼저 복사하고 같은 계정의 웹에서 저장된 대화를 열어 다운로드 재확인</td>
+</tr>
+</tbody>
+</table></div>
+<figure><img alt="다운로드 실패가 보이면 본문을 먼저 복사해 보존합니다." src="../captures/annotated/02_chatgpt/CG01_04_word_download_failed.png" /><figcaption>다운로드 실패가 보이면 본문을 먼저 복사해 보존합니다.</figcaption></figure>
+<p>웹에서도 내려받기가 안 되면 Word 또는 DOCX 편집 프로그램에 붙여넣어 <code>CG01_보고서_수정본</code>으로 저장합니다. 표가 깨지면 표와 본문을 나누어 붙이고 숫자·단위를 확인합니다. 시간이 부족하면 아래 보고서 예시와 비교해 <strong>수치 오류 하나·표현 수정 하나</strong>를 찾고 다음 실습으로 이동합니다.</p>
+</details>
+<details>
+<summary>선택 참고: 보고서 예시와 검산 답</summary>
+<p>먼저 자신의 결과를 확인한 뒤 펼쳐 보세요.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>사업</th>
+<th style="text-align: right;">달성률</th>
+<th style="text-align: right;">집행률</th>
+<th style="text-align: right;">만족응답률</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>점검기록 정비</td>
+<td style="text-align: right;">99.3%</td>
+<td style="text-align: right;">92.4%</td>
+<td style="text-align: right;">82.2%</td>
+</tr>
+<tr>
+<td>계획작업 고객안내</td>
+<td style="text-align: right;">99.4%</td>
+<td style="text-align: right;">91.5%</td>
+<td style="text-align: right;">85.2%</td>
+</tr>
+<tr>
+<td>직원 업무교육</td>
+<td style="text-align: right;">98.4%</td>
+<td style="text-align: right;">90.2%</td>
+<td style="text-align: right;">84.6%</td>
+</tr>
+</tbody>
+</table></div>
+<p>근거가 <code>F6</code>처럼 단일 셀이면 연간 합계 범위인지 다시 묻습니다. 이 자료의 합산 범위는 <code>F6:F41</code>, 사업 조건 범위는 <code>B6:B41</code>입니다. 전체 지표 대조에는 만족응답률 K열을 포함한 <code>사업집계!A6:K8</code>을 씁니다.</p>
+<p><strong>보고서 완성 예시:</strong> <a href="../outputs/02_chatgpt/CG01_보고서_검증본.docx">Word</a> · <a href="../outputs/02_chatgpt/CG01_보고서_검증본.pdf">PDF</a> · <a href="../outputs/02_chatgpt/CG01_보고서_검증본.hwpx">HWPX</a>. 같은 내용 중 한 형식만 선택합니다. 실제 AI 답변을 검산·축약한 예시이며, 자신의 답변과 비교할 때 사용합니다.</p>
+</details>
+<h2 id="cg02">CG02. 보고서 작성 절차를 플러그인으로 재사용</h2>
+<p><strong>목표:</strong> 작성 순서와 검산 기준을 저장해 새 대화에서도 같은 방식으로 적용합니다.</p>
+<h3 id="_6">지금 준비할 파일</h3>
+<p><strong>생성 요청에는 파일 첨부 없음. 재사용 테스트에는 2개</strong>를 첨부합니다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>파일</th>
+<th>쓰는 이유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../materials/02_chatgpt/월별사업실적_가상.xlsx">CG01에서 쓴 실적 Excel</a></td>
+<td>저장한 계산·작성 절차가 적용되는지 확인</td>
+</tr>
+<tr>
+<td><a href="../materials/02_chatgpt/보고서작성_입력메모_가상.pdf">같은 보고서 작성 메모 PDF</a></td>
+<td>보고서 목적·확인사항을 유지하는지 확인</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_7">바로 할 일</h3>
+<ol>
+<li>플러그인 제작 기능이 있는 계정에서 <strong>Plugin Creator</strong>를 선택합니다.</li>
+<li>아래 생성 요청을 보냅니다.</li>
+<li>보여 준 지침의 계산식·단위·출력 순서를 확인한 뒤 화면의 생성·저장 단계를 진행합니다.</li>
+<li>저장된 플러그인 이름을 확인합니다.</li>
+</ol>
+<p>요청문 원본: <a href="../prompts/CG02_보고서플러그인생성.txt">CG02</a></p>
+<pre><code class="language-text">'업무실적 보고서 초안' 플러그인을 만들어 주세요.
+목적: 월별사업실적 Excel과 보고서 입력 메모를 받아 같은 순서로 보고서 초안을 작성한다.
+절차: 파일·시트·열·기간·단위를 확인 →
+월별원자료에서 사업별 합계와 합계 기반 비율 계산 →
+사업집계와 대조 →
+초안 작성 →
+사람의 확인사항 제시.
+출력: A4 2쪽 안팎,
+요약/
+업무별 실적표/
+확인된 사실/
+추가 확인이 필요한 해석/
+개선 제안/
+검토자 확인사항.
+규칙: 사업 단위 혼합 금지,
+교육 연인원과 고유 인원 구분,
+2025년 실적과 2026년 용역 조건 분리,
+미제공 사실 생성 금지,
+수치 근거 표시.
+외부 앱 연결은 필요 없습니다.
+필요한 지침과 자료만 사용하고,
+실제 생성이 가능하지 않으면 권한·기능 제한을 알려 주세요.
+생성 전 초안을 보여 주세요.
+</code></pre>
+<figure><img alt="저장된 보고서 플러그인에서 채팅에 사용하기를 선택합니다." src="../captures/annotated/02_chatgpt/CG02_01_plugin_created.png" /><figcaption>저장된 보고서 플러그인에서 채팅에 사용하기를 선택합니다.</figcaption></figure>
+<h3 id="_8">새 대화에서 테스트하세요</h3>
+<ol>
+<li>새 대화를 열고 <code>@</code> 메뉴의 <strong>Plugins</strong>에서 자신이 저장한 플러그인을 선택합니다.</li>
+<li>실적 Excel·입력 메모 PDF <strong>2개</strong>를 첨부합니다.</li>
+<li>다음 요청을 보냅니다.</li>
+</ol>
+<p>요청문 원본: <a href="../prompts/CG02T_플러그인재사용.txt">CG02T</a></p>
+<pre><code class="language-text">업무실적 보고서 초안 플러그인을 적용해
+첨부한 월별사업실적_가상.xlsx와 보고서작성_입력메모_가상.pdf로 2025년 보고서 초안을 작성해 주세요.
+적용한 플러그인 이름과 확인한 파일·시트를 먼저 표시하고,
+합계·비율의 근거를 보여 주세요.
+</code></pre>
+<figure><img alt="새 대화의 플러그인 선택과 입력 파일 2개를 확인합니다." src="../captures/annotated/02_chatgpt/CG02_02_plugin_test_prompt.png" /><figcaption>새 대화의 플러그인 선택과 입력 파일 2개를 확인합니다.</figcaption></figure>
+<ol>
+<li>적용한 플러그인 이름과 자료 범위를 읽습니다.</li>
+<li>합계·비율을 CG01에서 확인한 값과 비교합니다. 연인원·2025년 기간이 유지됐는지도 봅니다.</li>
+</ol>
+<figure><img alt="답변에 표시된 플러그인과 Excel 범위를 확인합니다." src="../captures/annotated/02_chatgpt/CG02_03_plugin_result.png" /><figcaption>답변에 표시된 플러그인과 Excel 범위를 확인합니다.</figcaption></figure>
+<p>기준을 어겼으면 “플러그인 지침의 어느 항목을 고쳐야 하는지 제안하고 수정 초안을 보여 줘”라고 요청합니다. 지침을 고친 뒤 새 대화에서 다시 테스트합니다.</p>
+<h3 id="_9">성공 확인</h3>
+<p>새 대화에 저장한 플러그인을 적용했고 CG01과 계산값·작성 기준이 같으면 완료입니다.</p>
+<details>
+<summary>선택 참고: 플러그인이 없을 때</summary>
+<p>Plugin Creator가 없으면 위 지침을 텍스트로 저장하고 새 대화에 붙여 같은 자료에 적용합니다. 파일 2개를 첨부하고 계산값을 확인하는 작업은 계속할 수 있습니다. 이 경우 플러그인을 저장한 결과와 구분합니다. <a href="https://learn.chatgpt.com/docs/build-plugins">플러그인 제작 안내</a> · <a href="https://learn.chatgpt.com/docs/migrate-custom-gpts">맞춤 GPT 이전 안내</a></p>
+</details>
+<details>
+<summary>선택 참고: 재사용 결과 확인</summary>
+<p><a href="../outputs/02_chatgpt/CG02_재사용_실제응답.txt">보고서 재사용 답변 예시</a>를 자신의 답변과 비교할 수 있습니다. 예시의 합계·비율은 CG01과 같으며, <code>사업집계!A6:K8</code>로 만족응답률까지 확인합니다. 다른 계정의 플러그인이 자동으로 설치되었다고 가정하지 말고, 수업에서는 자신의 저장 지침을 사용합니다.</p>
+</details>
+<h2 id="cg03-alio">CG03. ALIO 공개자료로 기관 비교표 만들기</h2>
+<p><strong>목표:</strong> 같은 연도·직군·단위로 공개 보수 자료를 비교합니다.</p>
+<h3 id="_10">지금 준비할 파일</h3>
+<p><strong>첨부 4개:</strong> 비교 Excel 1개 + 원문 PDF 3개입니다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>파일</th>
+<th>쓰는 이유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../materials/02_chatgpt/ALIO_3기관_비교_실제자료.xlsx">3기관 비교 Excel</a></td>
+<td>기관·연도·단위를 맞춰 계산</td>
+</tr>
+<tr>
+<td><a href="../materials/00_public/ALIO_통일연구원_직원평균보수.pdf">통일연구원 보수 공시 PDF</a></td>
+<td>첫 기관의 원값·정의 확인</td>
+</tr>
+<tr>
+<td><a href="../materials/00_public/ALIO_한국식품안전관리인증원_직원평균보수.pdf">한국식품안전관리인증원 보수 공시 PDF</a></td>
+<td>두 번째 기관의 원값·정의 확인</td>
+</tr>
+<tr>
+<td><a href="../materials/00_public/ALIO_국립공원공단_직원평균보수.pdf">국립공원공단 보수 공시 PDF</a></td>
+<td>세 번째 기관의 원값·정의 확인</td>
+</tr>
+</tbody>
+</table></div>
+<p>공개 원문은 PDF 그대로 사용합니다. 이번 자료는 한전의 보수·실적 자료가 아닙니다.</p>
+<h3 id="_11">바로 할 일</h3>
+<ol>
+<li>새 대화에 위 파일 <strong>4개</strong>를 첨부합니다.</li>
+<li>다음 요청을 보냅니다.</li>
+<li><code>공시원자료</code> 시트의 기관·연도·모집단·결산/예산·단위·출처를 확인합니다.</li>
+</ol>
+<p>요청문 원본: <a href="../prompts/CG03_ALIO비교.txt">CG03</a></p>
+<pre><code class="language-text">첨부 자료의 통일연구원·한국식품안전관리인증원·국립공원공단 일반정규직 직원평균보수를 비교해 주세요.
+1. 공시원자료에서 기관·연도·모집단·결산/예산·금액 단위·출처를 먼저 확인하세요.
+2. 2024년 결산과 2025년 결산만 같은 기준으로 비교하고,
+금액은 천원으로 표시하세요.
+3. 기관별 2024년/2025년 보수와 증가율 = (2025 ÷ 2024 - 1) × 100을 계산하세요.
+비율은 소수점 첫째 자리로 표시하고 원값은 유지하세요.
+4. 종업원수·근속개월은 원문 정의를 확인한 뒤 보조 정보로만 제시하세요.
+5. 원문 PDF의 페이지·표·행과 Excel의 시트·행을 연결하고
+차이가 있으면 원문 확인 필요로 표시하세요.
+보수 차이를 업무능력·생산성·적정성 순위로 설명하지 말고,
+한전의 실적이나 보수 자료라고 표현하지 마세요.
+</code></pre>
+<figure><img alt="Excel 1개와 원문 PDF 3개를 첨부합니다." src="../captures/annotated/02_chatgpt/CG03_01_attached_prompt.png" /><figcaption>Excel 1개와 원문 PDF 3개를 첨부합니다.</figcaption></figure>
+<h3 id="_12">원문과 비교하고 고치세요</h3>
+<ol>
+<li>원문 PDF를 열어 <strong>일반정규직·2024/2025 결산</strong> 행을 찾습니다.</li>
+<li>답변의 금액·단위·페이지가 원문과 맞는지 봅니다.</li>
+<li>증가율은 <code>(2025 ÷ 2024 - 1) × 100</code>으로 확인합니다.</li>
+<li>예산·다른 직군이 섞였거나 종업원수의 정의가 불분명하면 다음 요청을 보냅니다.</li>
+</ol>
+<p>요청문 원본: <a href="../prompts/CG03R_ALIO근거수정.txt">CG03R</a></p>
+<pre><code class="language-text">비교표의 각 숫자와 연도·모집단·단위를 다시 확인해 주세요.
+2026년 예산, 다른 직군, 수당 세부자료가 섞였으면 비교에서 제외하고
+2024·2025 결산 일반정규직으로 맞추세요.
+원문에서 확인되는 종업원수 정의를 적고,
+확인하지 못한 정의는 추정하지 마세요.
+수정 전후와 출처 페이지·표를 제시하세요.
+</code></pre>
+<figure><img alt="비교표의 연도·단위·원값을 공시 PDF와 대조합니다." src="../captures/annotated/02_chatgpt/CG03_02_comparison.png" /><figcaption>비교표의 연도·단위·원값을 공시 PDF와 대조합니다.</figcaption></figure>
+<figure><img alt="후속 답변의 종업원수 정의와 비교 대상을 확인합니다." src="../captures/annotated/02_chatgpt/CG03_03_definition_revision.png" /><figcaption>후속 답변의 종업원수 정의와 비교 대상을 확인합니다.</figcaption></figure>
+<p>같은 천원 단위로 비교하고 보수 차이를 생산성·업무능력 순위로 설명하지 않습니다. 공시 종업원수가 소수여도 연말 고유 인원으로 바꾸지 않습니다. 비교표와 계산식·근거 페이지를 저장합니다. 읽히지 않는 칸은 원문 화면을 확인하고, 확인할 수 없으면 미확인으로 남깁니다.</p>
+<h3 id="_13">성공 확인</h3>
+<p>세 기관의 2024·2025 결산 일반정규직을 같은 단위로 비교하고, 증가율·출처·종업원수 정의를 확인했으면 완료입니다.</p>
+<details>
+<summary>선택 참고: 비교표 예시와 정의</summary>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>기관</th>
+<th style="text-align: right;">2024 결산(천원)</th>
+<th style="text-align: right;">2025 결산(천원)</th>
+<th style="text-align: right;">증가율</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>통일연구원</td>
+<td style="text-align: right;">65,541</td>
+<td style="text-align: right;">67,356</td>
+<td style="text-align: right;">2.8%</td>
+</tr>
+<tr>
+<td>한국식품안전관리인증원</td>
+<td style="text-align: right;">57,720</td>
+<td style="text-align: right;">60,554</td>
+<td style="text-align: right;">4.9%</td>
+</tr>
+<tr>
+<td>국립공원공단</td>
+<td style="text-align: right;">61,473</td>
+<td style="text-align: right;">62,177</td>
+<td style="text-align: right;">1.1%</td>
+</tr>
+</tbody>
+</table></div>
+<p>수치는 각 원문 <strong>1쪽 일반정규직 표</strong>에서 가져옵니다. 상시종업원수는 월별 급여 지급 대상 인원의 연간 합계 ÷ 12이며, 연말 인원·FTE와 구분합니다. 원문 2쪽 공통 정의가 무기계약직도 언급하더라도 이번 비교에 다른 직군을 섞지 않습니다.</p>
+<p><strong>비교표 완성 예시:</strong> <a href="../outputs/02_chatgpt/CG03_ALIO_비교표_검증본.docx">Word</a> · <a href="../outputs/02_chatgpt/CG03_ALIO_비교표_검증본.pdf">PDF</a> · <a href="../outputs/02_chatgpt/CG03_ALIO_비교표_검증본.hwpx">HWPX</a>. 한 형식을 선택해 자신의 결과와 비교합니다.</p>
+</details>
+<details>
+<summary>다른 형식이 필요한 경우</summary>
+<p>AI에 첨부하기만 한다면 앞에서 받은 PDF로 충분합니다. <strong>입력 문서를 PC에서 직접 고칠 때만</strong> 아래 자료를 받습니다.</p>
+<p><a href="../배포/노션_모듈준비물/준비물_02_chatgpt.zip">보고서 실습 입력자료 — Word·한글 포함</a></p>
+<p>압축을 풀고 필요한 문서의 <strong>Word 또는 한글 한 형식만</strong> 엽니다. 같은 내용의 PDF·Word·한글을 모두 AI에 첨부하지 않습니다. Excel·CSV는 앞 실습에서 받은 파일을 계속 사용합니다.</p>
+</details></article><nav class="page-nav" aria-label="이전·다음 장"><a href="../chapters/01-setup.html">← 계정과 Windows 앱</a><a href="../chapters/03-claude.html">Claude 업무 활용 →</a></nav><footer class="footer">한전 AI 업무활용 실습교재 · 마크다운 원본 기반<br>필요한 자료는 각 실습에서 내려받습니다.</footer></main></div></body></html>
