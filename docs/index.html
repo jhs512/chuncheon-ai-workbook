@@ -1,6 +1,55 @@
 <!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>시작하기 · 한전 AI 업무활용 실습교재</title><meta name="description" content="Windows의 ChatGPT·Claude 앱과 Gemini 웹으로 진행하는 6시간 AI 업무활용 실습교재. 실습 자료와 요청문, 실제 화면 캡처를 제공합니다."><link rel="stylesheet" href="./assets/site.css"><script src="./assets/site.js" defer></script></head><body class="home" data-root="./"><a class="skip" href="#main">본문으로 이동</a><aside class="sidebar" aria-label="교재 탐색"><div class="eyebrow">AI WORKBOOK</div><a class="brand" href="./index.html">한전 AI 업무활용<br>실습교재</a><div class="course">Windows · ChatGPT · Claude · Gemini<br>6시간 실습 과정</div><div class="search-wrap"><label class="sr-only" for="search">교재 검색</label><input id="search" type="search" placeholder="교재에서 검색" autocomplete="off"><div class="search-results" aria-live="polite"></div></div><nav class="nav" aria-label="장별 목차"><a href="./index.html" aria-current="page"><span class="num">↗</span>시작하기</a><a href="./chapters/00-basics.html"><span class="num">00</span>기본 개념</a><a href="./chapters/01-setup.html"><span class="num">01</span>계정과 Windows 앱</a><a href="./chapters/02-chatgpt.html"><span class="num">02</span>ChatGPT 업무 활용</a><a href="./chapters/03-claude.html"><span class="num">03</span>Claude 업무 활용</a><a href="./chapters/04-gemini.html"><span class="num">04</span>Gemini 업무 활용</a><a href="./chapters/05-apply.html"><span class="num">05</span>내 업무 적용·정리</a></nav><div class="sidebar-footer"><a href="https://axia-llm.dreamitbiz.com" target="_blank" rel="noopener">LLM 실습 플랫폼 ↗</a><a href="https://jangka44.notion.site/AI-3f6d4cdd4f478194a8dbda7adef5ccbd" target="_blank" rel="noopener">노션 교재 ↗</a></div></aside><div class="workspace"><header class="topbar"><button class="menu-button" type="button" aria-expanded="false">목차</button><span>시작하기</span><button class="print-button" type="button">인쇄</button></header><main id="main"><article><h1 id="ai">한전 AI 업무활용 실습교재</h1>
+<h2 id="_1">수업에서 다룬 핵심 내용</h2>
+<h3 id="_2">실습 환경 준비하기</h3>
+<p>ChatGPT는 <strong>구글 계정으로 가입</strong>합니다. 이번 교육에서는 파일과 도구를 함께 다루기 편한 <strong>ChatGPT 데스크톱 앱</strong>을 사용하며, 모든 실습은 <strong>Codex 모드</strong>로 진행합니다. Codex에서는 파일을 만들거나 수정하고, 명령을 실행하거나 연결된 도구를 사용할 수 있습니다.</p>
+<p><strong>액션 승인은 전체 액세스로 설정합니다.</strong> 먼저 <strong>설정 → 일반 → 권한</strong>에서 전체 액세스를 켠 다음, <strong>채팅 입력창의 액션 승인 메뉴에서도 전체 액세스</strong>를 선택합니다. 설정에서 해당 기능을 켜는 것과 현재 채팅에 적용하는 것은 별도입니다.</p>
+<h3 id="_3">작업에 맞게 프로젝트와 채팅 선택하기</h3>
+<p>오래 이어지는 작업이나 같은 자료를 반복해서 사용하는 작업은 <strong>프로젝트</strong>에서 진행합니다. 간단하게 끝나는 작업은 <strong>새 채팅</strong>으로 시작합니다.</p>
+<p>각 채팅에서는 <strong>현재 작업 폴더</strong>를 확인합니다. **Ctrl + ~**로 터미널을 열면 작업 위치를 확인할 수 있습니다. 이 단축키는 백틱 키를 사용합니다.</p>
+<h3 id="_4">원하는 작업을 프롬프트로 구체화하기</h3>
+<p>요청을 어떻게 써야 할지 모르겠다면 AI에게 먼저 프롬프트 작성을 부탁합니다.</p>
+<blockquote>
+<p>○○하고 싶은데, 프롬프트를 만들어 줘.</p>
+</blockquote>
+<p>작업을 더 구체적으로 정하고 싶다면 필요한 조건을 질문하도록 요청합니다.</p>
+<blockquote>
+<p>○○을 제대로 하려면 필요한 사항을 집요하게 물어봐 줘.</p>
+</blockquote>
+<p>목적과 조건이 정리되면 <strong>일단 작업을 시켜 봅니다.</strong> 기본 기능으로 처리하지 못하는 부분이 확인되면, 그때 필요한 <strong>스킬이나 MCP</strong>를 추가합니다.</p>
+<h3 id="_5">필요한 기능 추가하기</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>도구</th>
+<th>활용할 수 있는 작업</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/CursorTouch/Windows-MCP">CursorTouch/Windows-MCP</a></td>
+<td>Windows 화면을 확인하고 앱을 조작하는 작업</td>
+</tr>
+<tr>
+<td><a href="https://github.com/imsebeom/hwpx">imsebeom/hwpx</a></td>
+<td>한글 HWPX 문서를 만들고 편집·검증하는 작업</td>
+</tr>
+<tr>
+<td><a href="https://github.com/heygen-com/hyperframes">HyperFrames</a></td>
+<td>정보를 전달하는 영상이나 설명 영상을 만드는 작업</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mattpocock/skills">mattpocock/skills</a></td>
+<td>프로그램을 개발하고 설계·검토하는 작업</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="gemini">Gemini로 웹페이지와 자료 활용하기</h3>
+<p><strong>Chrome에 내장된 Gemini</strong>는 보고 있는 웹페이지를 연결해 바로 질문할 때 사용합니다. <strong>Live</strong>를 이용하면 페이지를 보면서 음성으로 대화를 이어갈 수 있습니다.</p>
+<p><strong>Gemini 노트북</strong>은 자료를 바탕으로 내용을 정리하고 전달할 때 사용합니다. <strong>오디오 개요</strong>로 팟캐스트 형식의 음성 콘텐츠를 만들고, <strong>동영상 개요</strong>로 설명 영상을 만들 수 있습니다.</p>
+<p><strong>기능 안내:</strong> <a href="https://learn.chatgpt.com/docs/permission-modes">액션 승인</a> · <a href="https://learn.chatgpt.com/docs/projects?surface=app">프로젝트</a> · <a href="https://learn.chatgpt.com/docs/reference/commands">단축키</a> · <a href="https://support.google.com/chrome/answer/16283624?hl=ko">Chrome의 Gemini</a> · <a href="https://support.google.com/gemininotebook/answer/16212820?hl=ko">오디오 개요</a> · <a href="https://support.google.com/gemininotebook/answer/16454555?hl=ko">동영상 개요</a></p>
+<hr />
 <p>Windows의 ChatGPT·Claude 앱과 Gemini 웹으로 진행하는 6시간 실습입니다. 위에서부터 순서대로 따라갑니다.</p>
-<h2 id="_1">시작하기</h2>
+<h2 id="_6">시작하기</h2>
 <p><a href="https://axia-llm.dreamitbiz.com">LLM 실습 플랫폼</a></p>
 <ol>
 <li><strong>기본 개념</strong>을 짧게 읽고, <strong>준비 안내</strong>에 따라 ChatGPT·Claude 앱과 Gemini 웹을 열어 봅니다.</li>
@@ -16,6 +65,6 @@
 <li><a href="./chapters/04-gemini.html">4. Gemini 업무 활용</a></li>
 <li><a href="./chapters/05-apply.html">5. 내 업무 적용·정리</a></li>
 </ul>
-<h2 id="_2">파일 선택과 참고 자료</h2>
+<h2 id="_7">파일 선택과 참고 자료</h2>
 <p>같은 문서는 <strong>한 형식만</strong> 받습니다. AI 첨부에는 <strong>PDF</strong>, 직접 편집할 때는 <strong>Word 또는 한글</strong>을 고릅니다. Excel·CSV는 실습에서 지정한 파일을 사용합니다.</p>
 <p>완성 예시와 실패 시 대안은 실습 뒤의 접힌 <strong>선택 참고</strong>에 있습니다. 직접 해 본 뒤 필요할 때만 엽니다.</p></article><nav class="page-nav" aria-label="이전·다음 장"><span></span><a href="./chapters/00-basics.html">기본 개념 →</a></nav><footer class="footer">한전 AI 업무활용 실습교재 · 마크다운 원본 기반<br>필요한 자료는 각 실습에서 내려받습니다.</footer></main></div></body></html>
